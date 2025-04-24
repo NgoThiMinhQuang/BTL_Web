@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAN PHONG PHAM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- css -->
+     <link rel="stylesheet" href="./css/header.css">
+     <link rel="stylesheet" href="./css/base.css">
+     <link rel="stylesheet" href="./css/TrangChu.css">
+     <link rel="stylesheet" href="./css/footer.css">
+     <link rel="stylesheet" href="./css/SanPham.css">
+     <link rel="stylesheet" href="./css/ChiTietSP.css">
+     <link rel="stylesheet" href="./css/GioHang.css">
+        <link rel="stylesheet" href="./css/dangNhap.css">
+        <link rel="stylesheet" href="./css/dangKy.css">
+        <link rel="stylesheet" href="./css/ThanhToan.css">
+        <link rel="stylesheet" href="./css/Reponsive.css">
+
+
+     <!-- link font chữ -->
+     <link
+     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+     rel="stylesheet">
+</head>
+<body style="margin: 0; padding: 0;">
+    <div class="app" style="margin-bottom: 0; overflow: hidden;">
+        <header class="header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="header-top1">
+                        <ul>
+                            <li>
+                                <a class="hover" href="#"><i class="fa-solid fa-phone-flip"></i> Phone: 0356132833</a>
+                            </li>
+                            <li><a class="hover" href="#">
+                                <i class="fa-solid fa-envelope"></i> Email: minhquang17012005@gmail.com</a>
+                            </a></li>
+                        </ul>
+                    </div>
+
+                    <div class="header-top2">
+                        <ul>
+                            <li><a class="thongBao hover" href="#">
+                                <i class="fa-regular fa-bell"></i> Thông báo</a></li>
+                            <li><a class="hover" href="#"><i class="fa-regular fa-circle-question"></i> Hỗ trợ</a></li>
+                            <li class="Language"><a href="javascript:void(0)" class="language-select">Language
+                                <i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="Language-option">
+                                    <li data-value="Tiếng Việt">Tiếng Việt</li>
+                                    <li data-value="English">English</li>
+                                </ul>
+                            </li>
+
+                            <li id="auth-options1"><a class="hover" href="DangKy.html">Đăng Ký</a></li>
+                            <li id="auth-options2"><a class="hover" href="DangNhap.html">Đăng Nhập</a></li>
+                            <li id="logout-option">
+                            <a id="infor-acc" href="#">
+                                <i class="fa-solid fa-user"></i>
+                                <ul id="submenu_acc">
+                                    <li id="admin_panel" onclick="showAdmin()">Quản lý cửa hàng</li>
+                                    <li id="dang_xuat" onclick="logout()">Đăng xuất</li>
+                                </ul>
+                            </a></li>     
+                         </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Header main -->
+             <div class="container1" style="background-color: #ffffff;">
+             <div class="container">
+               
+                 <div class="header-main">
+                     <div class="logo">
+                         <a href="index.html"><img src="./img/imgTrangChu/ngocquang3.png" alt="Logo">
+                           
+                        </a>
+                     </div>
+
+                     <div class="TimKiem">
+                        <div class="TimKiemInPut">
+                            <input type="text" class="input" placeholder="Tìm kiếm sản phẩm...">
+                            <!-- Xu hướng tìm kiếm -->
+                             <div class="history">
+                                <h3 class="heading">Tìm Kiếm Nhiều Nhất</h3>
+                                <ul class="list_history">
+                                    <li class="item"><a href="#"><i class="fa-solid fa-magnifying-glass"
+                                        style="font-size: 14px;"></i> Viết Máy & Mực </a></li>
+                                    <li class="item"><a href="#"><i class="fa-solid fa-magnifying-glass"
+                                            style="font-size: 14px;"></i> Dụng cụ học sinh & văn phòng</a></li>
+                                    <li class="item"><a href="#"><i class="fa-solid fa-magnifying-glass"
+                                            style="font-size: 14px;"></i> Sổ Tay </a></li>
+                                    <li class="item"><a href="#"><i class="fa-solid fa-magnifying-glass"
+                                                style="font-size: 14px;"></i> Bút Deli</a></li>
+                                    <li class="item"><a href="#"><i class="fa-solid fa-magnifying-glass"
+                                            style="font-size: 14px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;"></i> Giấy Note</a></li>
+                                </ul>
+                             </div>
+                        </div>
+                        <button class="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                     </div>
+
+                     <!-- Gio hàng -->
+                      <div class="GioHang">
+                        <a href="GioHang.html" class="fa-solid fa-cart-shopping" style="color: #0cc0df">
+                            
+                            <span class="notice">3</span>
+                            <span></span>
+                        </a>
+                      </div>
+                </div>  
+            </div> 
+            </div>            
+             
+
+
+             <div class="header-bottom" style="width: 100%; border-radius: 8px;">
+                <ul>
+                    <li><a href="index.html">
+                            <h3>TRANG CHỦ</h3>
+                        </a></li>
+                    <li><a href="#">
+                            <h3>GIỚI THIỆU</h3>
+                        </a></li>
+                    <li><a href="sanpham.html">
+                            <h3>CỬA HÀNG</h3>
+                        </a></li>
+                    <li><a href="sanpham.html">
+                            <h3>SẢN PHẨM</h3>
+                        </a></li>
+                    <li><a href="#">
+                            <h3>TIN TỨC</h3>
+                        </a></li>
+                    <li><a href="#">
+                            <h3>CHƯƠNG TRÌNH KHUYẾN MÃI</h3>
+                        </a></li>
+                    <li><a href="#">
+                            <h3>LIÊN HỆ</h3>
+                        </a></li>
+                    <li><a href="#">
+                            <h3>KHÁC</h3>
+                        </a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- Nội dung -->
+        <div class="main" style="background-color: white;">
+            <div class="img_container">
+                <a href="#"><img id="img-jpg" src="./img/imgTrangChu/SanPham2.jpg" alt="Nền"></a>
+                <div class="slide-buttonleft" onclick="left()">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div class="slide-buttonright" onclick="right()">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+
+                <div class="container">
+                    <div class="img_anh">
+                        <a href="#"><img id="img_GiayIn" src="./img/imgTrangChu/GiayIn.jpg"/></a>
+                        <a href="#"><img id="img_ButVe" src="./img/imgTrangChu/SanPham3.jpg"/></a>
+                        <div class="slide-buttonleft" onclick="left1()">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </div>
+                        <div class="slide-buttonright" onclick="right1()">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nội dung 2 -->
+             <div class="nd2">
+                <div class="container">
+                    <div class="inner-wrap1">
+                        <div class="box">
+                            <a href="SanPham.html">
+                                <div class="box1">
+                                    <div class="ButViet">Bút Viết Các Loại</div>
+                                    <div class="ButViet1">
+                                        <img src="./img/imgTrangChu/ButViet.png" alt=""/>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="box">
+                            <div class="box1" style="box-shadow: none;">
+                                <a href="">
+                                    <div class="box1-1" style="display: flex; background-color: white;">
+                                        <div class="GiayInVanPhong">Giấy In Văn Phòng</div>
+                                        <div class="img_GiayInVanPhong">
+                                            <img src="./img/imgTrangChu/GiayInVanPhong.png" alt=""/>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="box1-1" style="display: flex; background-color: white;">
+                                        <div class="GiayInVanPhong">Sổ - Vở Các Loại</div>
+                                        <div class="img_GiayInVanPhong">
+                                            <img src="./img/imgTrangChu/So.png" alt=""/>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="box1" style="box-shadow: none">
+                                <a href="">
+                                    <div class="box1-1" style="display: flex; background-color: white;">
+                                        <div class="GiayInVanPhong" style="margin-right: 0; padding-right: 27px;">Màu Acrylic</div>
+                                        <div class="img_GiayInVanPhong">
+                                            <img src="./img/imgTrangChu/Mau.png" alt=""/>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="box1-1" style="display: flex; background-color: white;">
+                                        <div class="GiayInVanPhong" style="margin-right: 70px;">Máy Tính</div>
+                                        <div class="img_GiayInVanPhong">
+                                            <img src="./img/imgTrangChu/MayTinh.png" alt=""/>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <a href="SanPham.html">
+                                <div class="box1" >
+                                    <div class="ButViet">Bút Viết Các Loại</div>
+                                    <div class="ButViet1">
+                                        <img src="./img/imgTrangChu/ButViet.png" alt=""/>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="box">
+                            <div class="box1" style="box-shadow: none; ">
+                                <a href="">
+                                    <div class="box1-1" style="display: flex; background-color: white;">
+                                        <div class="GiayInVanPhong" style="margin-right: 0; padding-right: 27px;">Màu Acrylic</div>
+                                        <div class="img_GiayInVanPhong">
+                                            <img src="./img/imgTrangChu/Mau.png" alt=""/>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="box1-1" style="display: flex; background-color: white;">
+                                        <div class="GiayInVanPhong" style="margin-right: 70px;">Máy Tính</div>
+                                        <div class="img_GiayInVanPhong">
+                                            <img src="./img/imgTrangChu/MayTinh.png" alt=""/>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             <!-- Nội dung 3 -->
+              <div class="nd3">
+                    <div class="container">
+                        <div class="inner-wrap3">
+                            <div class="img_GiamGia">
+                                <img src="./img/imgTrangChu/GiamGia.jpg" alt=""/>
+                            </div>
+                            <div class="SanPham_GiamGia">
+                                <div class="SanPham_GiamGia1">
+                                    <div class="anh_SanPham">
+                                        <a href="">
+                                            <img src="./img/imgTrangChu/But.png"/>
+                                            <p class="name_SanPham">Combo 10 Bút Gel Deli Bấm A575</p>
+                                        </a>
+                                    </div>
+
+                                    <div class="ThongTinSP">
+                                        <div class="SoLuongBan">
+                                            <p style="color: white ;display: flex;justify-content: center;line-height: 22px;">
+                                                
+                                                <i class="fa-solid fa-fire" style="color:#F47F26; font-size: 25px; position: absolute; left: 0; top: -5px"></i>
+                                                Đã Bán 0/10 Suất
+                                            </p>
+                                        </div>
+                                        <div class="gia_GiamGia">
+                                            <div class="gia">
+                                                <p>
+                                                    <h3>25.000 đ</h3>
+                                                </p>
+                                                <div style="color: #666">
+                                                    <span style="text-decoration: line-through; padding-right: 5px;">
+                                                        36.000 đ
+                                                    </span>
+                                                    <span>-44%</span>
+                                                </div>
+                                            </div>
+                                            <button class="btn">Sắp diễn ra</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="SanPham_GiamGia1">
+                                    <div class="anh_SanPham">
+                                        <a href="">
+                                            <img src="./img/imgTrangChu/Vo.png"/>
+                                            <p class="name_SanPham">Combo 10 Vở Điểm 10 TP-NB048</p>
+                                        </a>
+                                    </div>
+
+                                    <div class="ThongTinSP">
+                                        <div class="SoLuongBan">
+                                            <p style="color: white ;display: flex;justify-content: center;line-height: 22px;">
+                                                <i class="fa-solid fa-fire" style="color:#F47F26; font-size: 25px; position: absolute; left: 0; top: -5px"></i>
+                                                Đã Bán 0/10 Suất
+                                            </p>
+                                        </div>
+                                        <div class="gia_GiamGia">
+                                            <div class="gia">
+                                                <p>
+                                                    <h3>77.000 đ</h3>
+                                                </p>
+                                                <div style="color: #666">
+                                                    <span style="text-decoration: line-through; padding-right: 5px;">
+                                                        110.000 đ
+                                                    </span>
+                                                    <span>-30%</span>
+                                                </div>
+                                            </div>
+                                            <button class="btn">Sắp diễn ra</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="SanPham_GiamGia1">
+                                    <div class="anh_SanPham">
+                                        <a href="">
+                                            <img src="./img/imgTrangChu/MayTinh.png"/>
+                                            <p class="name_SanPham">Máy tính khoa học CASIO</p>
+                                        </a>
+                                    </div>
+
+                                    <div class="ThongTinSP">
+                                        <div class="SoLuongBan">
+                                            <p style="color: white ;display: flex;justify-content: center;line-height: 22px;">
+                                                <i class="fa-solid fa-fire" style="color:#F47F26; font-size: 23px; position: absolute; left: 0"></i>
+                                                Đã Bán 0/10 Suất
+                                            </p>
+                                        </div>
+                                        <div class="gia_GiamGia">
+                                            <div class="gia">
+                                                <p>
+                                                    <h3>501.000 đ</h3>
+                                                </p>
+                                                <div style="color: #666">
+                                                    <span style="text-decoration: line-through; padding-right: 5px;">
+                                                        669.000 đ
+                                                    </span>
+                                                    <span>-25%</span>
+                                                </div>
+                                            </div>
+                                            <button class="btn">Sắp diễn ra</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="SanPham_GiamGia1">
+                                    <div class="anh_SanPham">
+                                        <a href="">
+                                            <img src="./img/imgTrangChu/ChiGo.png"/>
+                                            <p class="name_SanPham">Combo 20 Bút Chì Gỗ Thiên Long</p>
+                                        </a>
+                                    </div>
+
+                                    <div class="ThongTinSP">
+                                        <div class="SoLuongBan">
+                                            <p style="color: white ;display: flex;justify-content: center;line-height: 22px;">
+                                                <i class="fa-solid fa-fire" style="color:#F47F26; font-size: 23px; position: absolute; left: 0"></i>
+                                                Đã Bán 0/10 Suất
+                                            </p>
+                                        </div>
+                                        <div class="gia_GiamGia">
+                                            <div class="gia">
+                                                <p>
+                                                    <h3>63.000 đ</h3>
+                                                </p>
+                                                <div style="color: #666">
+                                                    <span style="text-decoration: line-through; padding-right: 5px;">
+                                                        90.000 đ
+                                                    </span>
+                                                    <span>-30%</span>
+                                                </div>
+                                            </div>
+                                            <button class="btn">Sắp diễn ra</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+              </div>
+
+
+
+              <!-- Nội dung 4 -->
+               <div class="nd4">
+                  <div class="container">
+                    <div class="inner-wrap4">
+                        <div class="GoiY" style="margin-bottom: 10px; ">
+                            <h2>Gợi Ý Cho Bạn</h2>
+                        </div>
+                        <div class="SanPhamMoiRa" >
+                            
+                            <div class="SanPhamMoiRa1">
+                                <div class="img_spmr1">
+                                    <div class="img1">
+                                        <a href="ChiTietSP.html">
+                                            <img src="./img/imgTrangChu/deli.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="ThongTin_spmr1">
+                                    <div class="DaBan">
+                                        <p><span class="DanhGia"><i style="color: #F5CD48;" class="fa-solid fa-star"></i> 4.9</span>
+                                            <span class="DaBan1">Đã Bán 1944</span></p>
+                                        </div>
+                                    
+                                    <div class="tt">
+                                        <p style="margin-bottom: 0; text-decoration: line-through; font-size: 13px;color: #6F7280;">88.000 đ</p>
+                                        <h3 style="    margin-bottom: 8px;font-size: 18px; color: var(--text-color);">
+                                            55.000 đ</h3>
+                                        <p style="margin-top: 0px; color: #059568; font-size: 12px;">Giảm 33.000 đ</p>
+                                        <p><a href="ChiTietSP.html" style="color: #000;">Bút bi gel bấm Deli mực đen ngòi 0.5mm</a></p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="SanPhamMoiRa1">
+                                <div class="img_spmr1">
+                                    <div class="img1">
+                                        <a href="">
+                                            <img src="./img/imgTrangChu/GiayInVanPhong.png" alt=""/>                                    </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="ThongTin_spmr1">
+                                    <div class="DaBan">
+                                        <p><span class="DanhGia"><i style="color: #F5CD48;" class="fa-solid fa-star"></i> 4.9</span>
+                                            <span class="DaBan1">Đã Bán 2678</span></p>
+                                        </div>
+                                    
+                                    <div class="tt">
+                                        <p style="margin-bottom: 0; text-decoration: line-through; font-size: 13px;color: #6F7280;">87.000đ</p>
+                                        <h3 style="    margin-bottom: 8px;font-size: 18px; color: var(--text-color);">
+                                            67.000đ</h3>
+                                        <p style="margin-top: 0px; color: #059568; font-size: 12px;">Giảm 20.000 đ</p>
+                                        <p><a href="ChiTietSP.html" style="color: #000;">Ream giấy A4 70 gsm IK Copy (500 tờ) - Hàng nhập khẩu Indonesia</a></p>
+                                    </div>
+                                    <div class="color-options">
+                                        <div class="color1"></div>
+                                        <div class="color2"></div>
+                                        <div class="color3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="SanPhamMoiRa1">
+                                <div class="img_spmr1">
+                                    <div class="img1" >
+                                        <a href="">
+                                            <img src="./img/imgTrangChu/matinh.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="ThongTin_spmr1">
+                                    <div class="DaBan">
+                                        <p><span class="DanhGia"><i style="color: #F5CD48;" class="fa-solid fa-star"></i> 4.9</span>
+                                            <span class="DaBan1">Đã Bán 1670</span></p>
+                                        </div>
+                                    
+                                    <div class="tt">
+                                        <p style="margin-bottom: 0; text-decoration: line-through; font-size: 13px;color: #6F7280;">189.900đ</p>
+                                        <h3 style="    margin-bottom: 8px;font-size: 18px; color: var(--text-color);">
+                                            132.300đ</h3>
+                                        <p style="margin-top: 0px; color: #059568; font-size: 12px;">Giảm 57.600đ</p>
+                                        <p><a href="ChiTietSP.html" style="color: #000;">Máy tính văn phòng Thiên Long Flexio CAL-011</a></p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="SanPhamMoiRa1">
+                                <div class="img_spmr1">
+                                    <div class="img1">
+                                        <a href="">
+                                            <img src="./img/imgTrangChu/mauve.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="ThongTin_spmr1">
+                                    <div class="DaBan">
+                                        <p><span class="DanhGia"><i style="color: #F5CD48;" class="fa-solid fa-star"></i> 4.8</span>
+                                            <span class="DaBan1">Đã Bán 2.7k</span></p>
+                                        </div>
+                                    
+                                    <div class="tt">
+                                        <p style="margin-bottom: 0; text-decoration: line-through; font-size: 13px;color: #6F7280;">83.000đ</p>
+                                        <h3 style="    margin-bottom: 8px;font-size: 18px; color: var(--text-color);">
+                                            51.100đ</h3>
+                                        <p style="margin-top: 0px; color: #059568; font-size: 12px;">Giảm 31.900đ</p>
+                                        <p><a href="ChiTietSP.html" style="color: #000;">Bút lông 6/12 màu dạng bấm Retractable Fiber Pens Classic</a></p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="SanPhamMoiRa1">
+                                <div class="img_spmr1">
+                                    <div class="img1">
+                                        <a href="">
+                                            <img src="./img/imgTrangChu/combo.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="ThongTin_spmr1">
+                                    <div class="DaBan">
+                                        <p><span class="DanhGia"><i style="color: #F5CD48;" class="fa-solid fa-star"></i> 4.9</span>
+                                            <span class="DaBan1">Đã Bán 156</span></p>
+                                    </div>
+                                    
+                                    <div class="tt">
+                                        <p style="margin-bottom: 0; text-decoration: line-through; font-size: 13px;color: #6F7280;">997.800đ</p>
+                                        <h3 style="    margin-bottom: 8px;font-size: 18px; color: var(--text-color);">
+                                            698.460đ</h3>
+                                        <p style="margin-top: 0px; color: #059568; font-size: 12px;">Giảm 299.340đ</p>
+                                        <p><a href="ChiTietSP.html" style="color: #000;">Combo Toán Học (Trung Học)</a></p>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            
+                            </div>
+                            <div class="Xemthem">
+                                <button class="Xemthem1">Xem Thêm</button>
+                            </div>
+                        </div>              
+                    </div>
+                </div>
+
+
+
+                  <!-- Nội dung 5 -->
+                <div class="nd4">
+                    <div class="container">
+                      <div class="inner-wrap4">
+                          <div class="GoiY" style="margin-bottom: 10px">
+                              <h2>Sản Phẩm Bán Chạy</h2>
+                          </div>
+                          <div class="SanPhamMoiRa">
+                              
+                              <div class="SanPhamMoiRa1">
+                                  <div class="img_spmr1">
+                                      <div class="img1">
+                                          <a href="">
+                                              <img src="./img/imgTrangChu/sanphambanchay1.png" alt="">
+                                          </a>
+                                      </div>
+                                  </div>
+                                  
+                                  <div class="ThongTin_spmr1">
+                                      <div class="DaBan">
+                                          <p><span class="DanhGia"><i style="color: #F5CD48;" class="fa-solid fa-star"></i> 4.9</span>
+                                              <span class="DaBan1"> Đã bán 72.9k</span></p>
+                                          </div>
+                                      
+                                      <div class="tt">
+                                          <p>
+                                            <h3>1.000đ - 4.500đ</h3>
+                                          </p>
+                                          <div style="color: #666;">
+                                            <span
+                                                style="text-decoration: line-through;padding-right: 5px;">2.000đ - 7.000đ
+                                            </span> 
+                                                <span style=" background-color: #FEEEEA; padding: 5px; color: #EE4D2D; border-radius: 8px; margin-left: 8px;">-50%</span>
+                                        </div>
+
+
+                                          <p><a href="ChiTietSP.html" style="color: #000;">Bút bi nước mực gel Xingmai ngòi 0.5mm khô nhanh viết trơn</a></p>
+                                      </div>
+                                      
+                                  </div>
+                              </div>
+  
+                              <div class="SanPhamMoiRa1">
+                                  <div class="img_spmr1">
+                                      <div class="img1">
+                                          <a href="ChiTietSP1.html">
+                                              <img src="./img/imgTrangChu/sanphambanchay2.png" alt="">
+                                          </a>
+                                      </div>
+                                  </div>
+                                  
+                                  <div class="ThongTin_spmr1">
+                                    <div class="DaBan">
+                                        <p><span class="DanhGia"><i style="color: #F5CD48;" class="fa-solid fa-star"></i> 4.9</span>
+                                            <span class="DaBan1"> Đã bán 36.9k</span></p>
+                                    </div>
+                                    
+                                    <div class="tt">
+                                        <p>
+                                          <h3>10.000đ - 29.000đ</h3>
+                                        </p>
+                                        <div style="color: #666;">
+                                          <span
+                                              style="text-decoration: line-through;padding-right: 5px;">20.000đ - 45.000đ
+                                          </span> 
+                                              <span style=" background-color: #FEEEEA; padding: 5px; color: #EE4D2D; border-radius: 8px; margin-left: 8px;">-50%</span>
+                                        </div>
+                                        <p><a href="ChiTietSP.html" style="color: #000;">Bút dạ quang bộ 6 màu highlight pastel</a></p>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="SanPhamMoiRa1">
+                                  <div class="img_spmr1">
+                                      <div class="img1">
+                                          <a href="">
+                                              <img src="./img/imgTrangChu/sanphambanchay3.png" alt="">
+                                          </a>
+                                      </div>
+                                  </div>
+                                  
+                                  <div class="ThongTin_spmr1">
+                                    <div class="DaBan">
+                                        <p><span class="DanhGia"><i style="color: #F5CD48;" class="fa-solid fa-star"></i> 4.9</span>
+                                            <span class="DaBan1"> Đã bán 54.5k</span></p>
+                                    </div>
+                                    
+                                    <div class="tt">
+                                        <p>
+                                          <h3>14.500đ - 59.900đ</h3>
+                                        </p>
+                                        <div style="color: #666;">
+                                          <span
+                                              style="text-decoration: line-through;padding-right: 5px;">15.000đ - 65.000đ
+                                          </span> 
+                                              <span style=" background-color: #FEEEEA; padding: 5px; color: #EE4D2D; border-radius: 8px; margin-left: 8px;">-3%</span>
+                                        </div>
+                                        <p><a href="ChiTietSP.html" style="color: #000;">Sổ Còng Leng Keng Bìa Sổ Còng A4 A5 B5 Binder Còng Sắt 20 26 30</a></p>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="SanPhamMoiRa1">
+                                  <div class="img_spmr1">
+                                      <div class="img1">
+                                          <a href="">
+                                              <img src="./img/imgTrangChu/sanphambanchay4.png" alt="">
+                                          </a>
+                                      </div>
+                                  </div>
+                                  
+                                  <div class="ThongTin_spmr1">
+                                    <div class="DaBan">
+                                        <p><span class="DanhGia"><i style="color: #F5CD48;" class="fa-solid fa-star"></i> 4.9</span>
+                                            <span class="DaBan1"> Đã bán 54.5k</span></p>
+                                    </div>
+                                    
+                                    <div class="tt">
+                                        <p>
+                                          <h3>14.500đ - 59.900đ</h3>
+                                        </p>
+                                        <div style="color: #666;">
+                                          <span
+                                              style="text-decoration: line-through;padding-right: 5px;">15.000đ - 65.000đ
+                                          </span> 
+                                              <span style=" background-color: #FEEEEA; padding: 5px; color: #EE4D2D; border-radius: 8px; margin-left: 8px;">-3%</span>
+                                        </div>
+                                        <p><a href="ChiTietSP.html" style="color: #000;">Khay đựng tài liệu Leng Keng kệ đựng tài liệu văn phòng A4 4 ngăn </a></p>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="SanPhamMoiRa1">
+                                  <div class="img_spmr1">
+                                      <div class="img1">
+                                          <a href="">
+                                              <img src="./img/imgTrangChu/sanphambanchay5.png" alt="">
+                                          </a>
+                                      </div>
+                                  </div>
+                                  
+                                  <div class="ThongTin_spmr1">
+                                      <div class="DaBan">
+                                          <p><span class="DanhGia"><i style="color: #F5CD48;" class="fa-solid fa-star"></i> 4.8</span>
+                                              <span class="DaBan1">Đã Bán 21.2k</span></p>
+                                          </div>
+                                          <div class="tt">
+                                            <p>
+                                              <h3>59.900đ</h3>
+                                            </p>
+                                            <div style="color: #666;">
+                                              <span
+                                                  style="text-decoration: line-through;padding-right: 5px;">65.000đ
+                                              </span> 
+                                                  <span style=" background-color: #FEEEEA; padding: 5px; color: #EE4D2D; border-radius: 8px; margin-left: 8px;">-3%</span>
+                                            </div>
+                                            <p><a href="ChiTietSP.html" style="color: #000;">Sổ tiết kiệm đựng tiền cúc bấm Leng Keng sổ chi tiêu da PU A6</a></p>
+                                        </div>
+                                      
+                                    </div>
+                                </div>
+                             </div>  
+                             <div class="Xemthem">
+                                <button class="Xemthem1">Xem Thêm </button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- Nội dung 6 -->
+                <div class="nd4">
+                    <div class="container">
+                      <div class="inner-wrap4">
+                          <div class="GoiY" style="margin-bottom: 10px">
+                              <h2>Hàng Mới Về</h2>
+                          </div>
+                          <div class="SanPhamMoiRa">
+                              
+                              <div class="SanPhamMoiRa1">
+                                  <div class="img_spmr1">
+                                      <div class="img1">
+                                          <a href="">
+                                              <img src="./img/imgTrangChu/hangmoive1.png" alt="">
+                                          </a>
+                                      </div>
+                                  </div>
+                                  
+                                  <div class="ThongTin_spmr1">
+                                    <div class="DaBan">
+                                        <p><span class="DanhGia"><i style="color: #F5CD48;" class="fa-solid fa-star"></i> 4.7</span>
+                                            <span class="DaBan1">Đã Bán 2.2k</span></p>
+                                        </div>
+                                        <div class="tt">
+                                          <p>
+                                            <h3>5.000đ</h3>
+                                          </p>
+                                          <div style="color: #666;">
+                                            <span
+                                                style="text-decoration: line-through;padding-right: 5px;">6.000đ
+                                            </span> 
+                                                <span style=" background-color: #FEEEEA; padding: 5px; color: #EE4D2D; border-radius: 8px; margin-left: 8px;">-3%</span>
+                                          </div>
+                                          <p><a href="" style="color: #000;">Bút gel ngòi 0.5mm bút đen xanh đỏ ngòi kim dung tích mực lớn</a></p>
+                                      </div>
+                                  </div>
+                              </div>
+  
+                              <div class="SanPhamMoiRa1">
+                                  <div class="img_spmr1">
+                                      <div class="img1">
+                                          <a href="">
+                                              <img src="./img/imgTrangChu/hangmoive2.png" alt="">
+                                          </a>
+                                      </div>
+                                  </div>
+                                  
+                                  <div class="ThongTin_spmr1">
+                                    <div class="DaBan">
+                                        <p><span class="DanhGia"><i style="color: #F5CD48;" class="fa-solid fa-star"></i> 4.8</span>
+                                            <span class="DaBan1">Đã Bán 1.9k</span></p>
+                                        </div>
+                                        <div class="tt">
+                                          <p>
+                                            <h3>3.000đ</h3>
+                                          </p>
+                                          <div style="color: #666;">
+                                            <span
+                                                style="text-decoration: line-through;padding-right: 5px;">6.000đ
+                                            </span> 
+                                                <span style=" background-color: #FEEEEA; padding: 5px; color: #EE4D2D; border-radius: 8px; margin-left: 8px;">-50%</span>
+                                          </div>
+                                          <p><a href="ChiTietSP.html" style="color: #000;">Bút màu Acrylic, bút đánh dấu highlight dạ quang văn phòng phẩm</a></p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="SanPhamMoiRa1">
+                                  <div class="img_spmr1">
+                                      <div class="img1">
+                                          <a href="">
+                                              <img src="./img/imgTrangChu/hangmoive3.png" alt="">
+                                          </a>
+                                      </div>
+                                  </div>
+                                  
+                                  <div class="ThongTin_spmr1">
+                                    <div class="DaBan">
+                                        <p><span class="DanhGia"><i style="color: #F5CD48;" class="fa-solid fa-star"></i> 4.8</span>
+                                            <span class="DaBan1">Đã Bán 21.2k</span></p>
+                                        </div>
+                                        <div class="tt">
+                                          <p>
+                                            <h3>7.000đ</h3>
+                                          </p>
+                                          <div style="color: #666;">
+                                            <span
+                                                style="text-decoration: line-through;padding-right: 5px;">14.000đ
+                                            </span> 
+                                                <span style=" background-color: #FEEEEA; padding: 5px; color: #EE4D2D; border-radius: 8px; margin-left: 8px;">-50%</span>
+                                          </div>
+                                          <p><a href="ChiTietSP.html" style="color: #000;">Sổ tay mini cute văn phòng phẩm Ngọc Quang ,sổ lò xo a7 120 trang S80</a></p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="SanPhamMoiRa1">
+                                  <div class="img_spmr1">
+                                      <div class="img1">
+                                          <a href="">
+                                              <img src="./img/imgTrangChu/hangmoive4.png" alt="">
+                                          </a>
+                                      </div>
+                                  </div>
+                                  
+                                  <div class="ThongTin_spmr1">
+                                    <div class="DaBan">
+                                        <p><span class="DanhGia"><i style="color: #F5CD48;" class="fa-solid fa-star"></i> 4.8</span>
+                                            <span class="DaBan1">Đã Bán 1.6k</span></p>
+                                        </div>
+                                        <div class="tt">
+                                          <p>
+                                            <h3>54.900đ</h3>
+                                          </p>
+                                          <div style="color: #666;">
+                                            <span
+                                                style="text-decoration: line-through;padding-right: 5px;">80.000đ
+                                            </span> 
+                                                <span style=" background-color: #FEEEEA; padding: 5px; color: #EE4D2D; border-radius: 8px; margin-left: 8px;">-26%</span>
+                                          </div>
+                                          <p><a href="ChiTietSP.html" style="color: #000;">Sổ lò xo A5, bộ 4 sổ kẻ ngang 120 trang bìa hoạt hình dễ thương S84</a></p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="SanPhamMoiRa1">
+                                  <div class="img_spmr1">
+                                      <div class="img1">
+                                          <a href="">
+                                              <img src="./img/imgTrangChu/hangmoive5.png" alt="">
+                                          </a>
+                                      </div>
+                                  </div>
+                                  
+                                  <div class="ThongTin_spmr1">
+                                    <div class="DaBan">
+                                        <p><span class="DanhGia"><i style="color: #F5CD48;" class="fa-solid fa-star"></i> 4.8</span>
+                                            <span class="DaBan1">Đã Bán 2.9k</span></p>
+                                        </div>
+                                        <div class="tt">
+                                          <p>
+                                            <h3>30.000đ</h3>
+                                          </p>
+                                          <div style="color: #666;">
+                                            <span
+                                                style="text-decoration: line-through;padding-right: 5px;">50.000đ
+                                            </span> 
+                                                <span style=" background-color: #FEEEEA; padding: 5px; color: #EE4D2D; border-radius: 8px; margin-left: 8px;">-30%</span>
+                                          </div>
+                                          <p><a href="ChiTietSP.html" style="color: #000;">Keo dán khô Leng Keng dạng bút kéo màu pastel keo dán 2 mặt dài 6m siêu tiện lợi BK01</a></p>
+                                      </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>  
+                        <div class="Xemthem">
+                            <button class="Xemthem1">Xem Thêm </button>
+                        </div>  
+                    </div>
+                </div>
+                <!-- Nội dung 7 -->
+                <div class="nd5">
+                    <div class="container">
+                        <div class="inner-wrap5">
+
+                            <div class="triankhachhang">
+                                <h2><i class="fa-solid fa-gift" style="color: red"></i>  Tri Ân Khách Hàng</h2>
+                                
+                            </div>
+                            <div class="img_TongKet">
+                                <div class="img_TongKet1">
+                                    <img src="./img/imgTrangChu/tongket2.jpg" alt=""/>
+                                </div>
+                                <div class="img_TongKet1">
+                                    <img src="./img/imgTrangChu/tongket1.png" alt=""/>
+                                </div>
+                                <div class="img_TongKet1">
+                                    <img src="./img/imgTrangChu/tongket3.jpg" alt=""/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Nội dung 8 -->
+                <div class="nd4">
+                    <div class="container">
+                      <div class="inner-wrap4">
+                          <div class="GoiY" style="margin-bottom: 10px">
+                              <h2>Sản Phẩm Đã Xem</h2>
+                          </div>
+                          <div class="SanPhamMoiRa">
+                              
+                              <div class="SanPhamMoiRa1">
+                                  <div class="img_spmr1">
+                                      <div class="img1">
+                                          <a href="ChiTietSP.html">
+                                              <img src="./img/imgTrangChu/deli.png" alt="">
+                                          </a>
+                                      </div>
+                                  </div>
+                                  
+                                  <div class="ThongTin_spmr1">
+                                    <div class="DaBan">
+                                        <p><span class="DanhGia"><i style="color: #F5CD48;" class="fa-solid fa-star"></i> 4.8</span>
+                                            <span class="DaBan1">Đã Bán 1944</span></p>
+                                        </div>
+                                        <div class="tt">
+                                          <p>
+                                            <h3>55.000đ</h3>
+                                          </p>
+                                          <div style="color: #666;">
+                                            <span
+                                                style="text-decoration: line-through;padding-right: 5px;">88.000đ
+                                            </span> 
+                                                <span style=" background-color: #FEEEEA; padding: 5px; color: #EE4D2D; border-radius: 8px; margin-left: 8px;">-20%</span>
+                                          </div>
+                                          <p><a href="ChiTietSP.html" style="color: #000;"></a>Bút bi gel bấm Deli mực đen ngòi 0.5mm</p>
+                                      </div>
+                                  </div>
+                              </div>
+  
+                              <div class="SanPhamMoiRa1">
+                                <div class="img_spmr1">
+                                    <div class="img1">
+                                        <a href="">
+                                            <img src="./img/imgTrangChu/sanphambanchay5.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="ThongTin_spmr1">
+                                    <div class="DaBan">
+                                        <p><span class="DanhGia"><i style="color: #F5CD48;" class="fa-solid fa-star"></i> 4.8</span>
+                                            <span class="DaBan1">Đã Bán 21.2k</span></p>
+                                        </div>
+                                        <div class="tt">
+                                          <p>
+                                            <h3>59.900đ</h3>
+                                          </p>
+                                          <div style="color: #666;">
+                                            <span
+                                                style="text-decoration: line-through;padding-right: 5px;">65.000đ
+                                            </span> 
+                                                <span style=" background-color: #FEEEEA; padding: 5px; color: #EE4D2D; border-radius: 8px; margin-left: 8px;">-3%</span>
+                                          </div>
+                                          <p><a href="ChiTietSP.html" style="color: #000;">Sổ tiết kiệm đựng tiền cúc bấm Leng Keng sổ chi tiêu da PU A6</a></p>
+                                      </div>
+                                    
+                                  </div>
+                              </div>
+                              <div class="SanPhamMoiRa1">
+                                  <div class="img_spmr1">
+                                      <div class="img1">
+                                          <a href="">
+                                              <img src="./img/imgTrangChu/deli.png" alt="">
+                                          </a>
+                                      </div>
+                                  </div>
+                                  
+                                  <div class="ThongTin_spmr1">
+                                    <div class="DaBan">
+                                        <p><span class="DanhGia"><i style="color: #F5CD48;" class="fa-solid fa-star"></i> 4.8</span>
+                                            <span class="DaBan1">Đã Bán 21.2k</span></p>
+                                        </div>
+                                        <div class="tt">
+                                          <p>
+                                            <h3>59.900đ</h3>
+                                          </p>
+                                          <div style="color: #666;">
+                                            <span
+                                                style="text-decoration: line-through;padding-right: 5px;">65.000đ
+                                            </span> 
+                                                <span style=" background-color: #FEEEEA; padding: 5px; color: #EE4D2D; border-radius: 8px; margin-left: 8px;">-3%</span>
+                                          </div>
+                                          <p><a href="ChiTietSP.html" style="color: #000;">Sổ tiết kiệm đựng tiền cúc bấm Leng Keng sổ chi tiêu da PU A6</a></p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="SanPhamMoiRa1">
+                                  <div class="img_spmr1">
+                                      <div class="img1">
+                                          <a href="">
+                                              <img src="./img/imgTrangChu/deli.png" alt="">
+                                          </a>
+                                      </div>
+                                  </div>
+                                  
+                                  <div class="ThongTin_spmr1">
+                                    <div class="DaBan">
+                                        <p><span class="DanhGia"><i style="color: #F5CD48;" class="fa-solid fa-star"></i> 4.8</span>
+                                            <span class="DaBan1">Đã Bán 21.2k</span></p>
+                                        </div>
+                                        <div class="tt">
+                                          <p>
+                                            <h3>59.900đ</h3>
+                                          </p>
+                                          <div style="color: #666;">
+                                            <span
+                                                style="text-decoration: line-through;padding-right: 5px;">65.000đ
+                                            </span> 
+                                                <span style=" background-color: #FEEEEA; padding: 5px; color: #EE4D2D; border-radius: 8px; margin-left: 8px;">-3%</span>
+                                          </div>
+                                          <p><a href="ChiTietSP.html" style="color: #000;">Sổ tiết kiệm đựng tiền cúc bấm Leng Keng sổ chi tiêu da PU A6</a></p>
+                                      </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+                                  </div>
+                              </div>
+                              <div class="SanPhamMoiRa1">
+                                  <div class="img_spmr1">
+                                      <div class="img1">
+                                          <a href="">
+                                              <img src="./img/imgTrangChu/deli.png" alt="">
+                                          </a>
+                                      </div>
+                                  </div>
+                                  
+                                  <div class="ThongTin_spmr1">
+                                    <div class="DaBan">
+                                        <p><span class="DanhGia"><i style="color: #F5CD48;" class="fa-solid fa-star"></i> 4.8</span>
+                                            <span class="DaBan1">Đã Bán 21.2k</span></p>
+                                        </div>
+                                        <div class="tt">
+                                          <p>
+                                            <h3>59.900đ</h3>
+                                          </p>
+                                          <div style="color: #666;">
+                                            <span
+                                                style="text-decoration: line-through;padding-right: 5px;">65.000đ
+                                            </span> 
+                                                <span style=" background-color: #FEEEEA; padding: 5px; color: #EE4D2D; border-radius: 8px; margin-left: 8px;">-3%</span>
+                                          </div>
+                                          <p><a href="ChiTietSP.html" style="color: #000;">Sổ tiết kiệm đựng tiền cúc bấm Leng Keng sổ chi tiêu da PU A6</a></p>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="Xemthem">
+                            <button class="Xemthem1">Xem Thêm </button>
+                        </div> 
+                    </div>
+                </div>
+                <!-- Nội dung 9 -->
+                <div class="nd6">
+                    <div class="container">
+                        <div class="inner-wrap6">
+                             <div class="CamKetChatLuong">
+                                <i class="fa-solid fa-shield-heart" style="padding: 0px 10px;"></i>
+                                <p ><h3 style="text-align: center;">Cam Kết Chất Lượng</h3></p>
+                                <p style="text-align: center;">Nhập khẩu, bảo hành chính hãng</p>
+                             </div>
+                             <div class="CamKetChatLuong">
+                                <i class="fa-solid fa-truck-fast"></i>
+                                <p><h3 style="text-align: center;">Miễn Phí Vận Chuyển</h3></p>
+                                <p style="text-align: center;">Tiết kiệm tối đa – Nhận hàng tận nơi</p>
+                             </div>
+                             <div class="CamKetChatLuong">
+                                <i class="fa-solid fa-headset"></i>
+                                <p><h3 style="text-align: center;">Tư Vấn Nhiệt Tình</h3></p>
+                                <p style="text-align: center;">Luôn lắng nghe – Luôn sẵn sàng hỗ trợ</p>
+                             </div>
+                             <div class="CamKetChatLuong">
+                                <i class="fa-solid fa-rotate"></i>
+                                <p><h3 style="text-align: center;">Miễn Phí Đổi Trả</h3></p>
+                                <p style="text-align: center;">Mua hàng an tâm – Đổi trả dễ dàng</p>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-container">
+                    <div class="footer1">
+                        <h3 class="footer_heading">Ngọc Quang</h3>
+                        <ul  class="footer_list">
+                            <li><a href="">Địa chỉ: Hà Nội</a></li>
+                            <li><a href="">Hotline: 0356132833</a></li>
+                            <li><a href="">Email: minhquang17012005@gmail.com</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer1">
+                        <h3 class="footer_heading">Cửa hàng</h3>
+                        <ul class="footer_list">
+
+                            <li><a href="">Liên hệ</a> </li>
+                            <li><a href="">Thông tin về chúng tôi</a></li>
+                            <li><a href="">Giỏ hàng</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer1">
+                        <h3 class="footer_heading">Khuyến Mãi Ưu Đãi</h3>
+                        <ul class="footer_list">
+                            <li style="color: black;">
+                                <label for="fullname">Đăng ký nhận thông tin ở đây</label>
+                                <div style="display: flex;">
+                                    <input id="fullname" required placeholder="Nhập email" name="ho_ten" type="email" maxlength="50" style="padding: 8px; margin-top: 12px;">
+                                    <div style="align-items: center; display: flex; margin-top: 12px; border: 1px #000 solid; padding: 0 5px; cursor: pointer; color: #000;">Đăng Ký</div>
+                                </div>
+                            </li>
+                            <li style="display: flex;">
+                                <div class="footer_item">
+                                    <a href="" style="color: black;"><i class="fa-brands fa-facebook"></i></a>
+                                </div>
+                                <div class="footer_item">
+                                    <a href="" style="color: black;"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                                <div class="footer_item">
+                                    <a href="" style="color: black;"><i class="fa-brands fa-linkedin"></i></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer1">
+                        <h3 class="footer_heading">Địa chỉ</h3>
+                        <ul class="footer_list">
+
+                            <li><iframe class="bando"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14897.074812396653!2d105.83546678715818!3d21.0219319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abecf96ebdf9%3A0xe4cdba9b19fd27e2!2zQ-G7rWEgaMOgbmcgVsSDbiBwaMOybmcgcGjhuqltIEjhu5NuZyBIw6A!5e0!3m2!1svi!2s!4v1744030159806!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+
+    </div>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

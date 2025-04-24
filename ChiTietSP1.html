@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAN PHONG PHAM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- css -->
+     <link rel="stylesheet" href="./css/header.css">
+     <link rel="stylesheet" href="./css/base.css">
+     <link rel="stylesheet" href="./css/TrangChu.css">
+     <link rel="stylesheet" href="./css/footer.css">
+     <link rel="stylesheet" href="./css/SanPham.css">
+     <link rel="stylesheet" href="./css/ChiTietSP.css">
+     <link rel="stylesheet" href="./css/GioHang.css">
+        <link rel="stylesheet" href="./css/dangNhap.css">
+        <link rel="stylesheet" href="./css/dangKy.css">
+        <link rel="stylesheet" href="./css/ThanhToan.css">
+        <link rel="stylesheet" href="./css/Reponsive.css">
+
+
+     <!-- link font chữ -->
+     <link
+     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+     rel="stylesheet">
+</head>
+<body style="margin: 0; padding: 0;">
+    <div class="app" style="margin-bottom: 0; overflow: hidden;">
+        <header class="header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="header-top1">
+                        <ul>
+                            <li>
+                                <a class="hover" href="#"><i class="fa-solid fa-phone-flip"></i> Phone: 0356132833</a>
+                            </li>
+                        <hr>
+                            <li><a class="hover" href="#">
+                                <i class="fa-solid fa-envelope"></i> Email: minhquang17012005@gmail.com</a>
+                            </a></li>
+                        </ul>
+                    </div>
+
+                    <div class="header-top2">
+                        <ul>
+                            <li><a class="thongBao hover" href="#">
+                                <i class="fa-regular fa-bell"></i> Thông báo</a></li>
+                            <li><a class="hover" href="#"><i class="fa-regular fa-circle-question"></i> Hỗ trợ</a></li>
+                            <li class="Language"><a href="javascript:void(0)" class="language-select">Language
+                                <i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="Language-option">
+                                    <li data-value="Tiếng Việt">Tiếng Việt</li>
+                                    <li data-value="English">English</li>
+                                </ul>
+                            </li>
+
+                            <li id="auth-options1"><a class="hover" href="DangKy.html">Đăng Ký</a></li>
+                            <li id="auth-options2"><a class="hover" href="DangNhap.html">Đăng Nhập</a></li>
+                            <li id="logout-option">
+                            <a id="infor-acc" href="#">
+                                <i class="fa-solid fa-user"></i>
+                                <ul id="submenu_acc">
+                                    <li id="admin_panel">Quản lý cửa hàng</li>
+                                    <li id="dang_xuat" onclick="logout()">Đăng xuất</li>
+                                </ul>
+                            </a></li>     
+                         </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Header main -->
+             <div class="container1" style="background-color: #ffffff;">
+             <div class="container">
+               
+                 <div class="header-main">
+                     <div class="logo">
+                         <a href="index.html"><img src="./img/imgTrangChu/ngocquang3.png" alt="Logo">
+                           
+                        </a>
+                     </div>
+
+                     <div class="TimKiem">
+                        <div class="TimKiemInPut">
+                            <input type="text" class="input" placeholder="Tìm kiếm sản phẩm...">
+                            <!-- Xu hướng tìm kiếm -->
+                             <div class="history">
+                                <h3 class="heading">Tìm Kiếm Nhiều Nhất</h3>
+                                <ul class="list_history">
+                                    <li class="item"><a href="#"><i class="fa-solid fa-magnifying-glass"
+                                        style="font-size: 14px;"></i> Viết Máy & Mực </a></li>
+                                    <li class="item"><a href="#"><i class="fa-solid fa-magnifying-glass"
+                                            style="font-size: 14px;"></i> Dụng cụ học sinh & văn phòng</a></li>
+                                    <li class="item"><a href="#"><i class="fa-solid fa-magnifying-glass"
+                                            style="font-size: 14px;"></i> Sổ Tay </a></li>
+                                    <li class="item"><a href="#"><i class="fa-solid fa-magnifying-glass"
+                                                style="font-size: 14px;"></i> Bút Deli</a></li>
+                                    <li class="item"><a href="#"><i class="fa-solid fa-magnifying-glass"
+                                            style="font-size: 14px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;"></i> Giấy Note</a></li>
+                                </ul>
+                             </div>
+                        </div>
+                        <button class="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                     </div>
+
+                     <!-- Gio hàng -->
+                      <div class="GioHang">
+                        <a href="GioHang.html" class="fa-solid fa-cart-shopping" style="color: #0cc0df">
+                            
+                            <span class="notice">3</span>
+                            
+                        </a>
+                      </div>
+                </div>  
+            </div> 
+            </div>            
+             
+
+
+             <div class="header-bottom" style="width: 100%; border-radius: 8px;">
+                <ul>
+                    <li><a href="index.html">
+                            <h3>TRANG CHỦ</h3>
+                        </a></li>
+                    <li><a href="#">
+                            <h3>GIỚI THIỆU</h3>
+                        </a></li>
+                    <li><a href="SanPham.html">
+                            <h3>CỬA HÀNG</h3>
+                        </a></li>
+                    <li><a href="SanPham.html">
+                            <h3>SẢN PHẨM</h3>
+                        </a></li>
+                    <li><a href="#">
+                            <h3>TIN TỨC</h3>
+                        </a></li>
+                    <li><a href="#">
+                            <h3>CHƯƠNG TRÌNH KHUYẾN MÃI</h3>
+                        </a></li>
+                    <li><a href="#">
+                            <h3>LIÊN HỆ</h3>
+                        </a></li>
+                    <li><a href="#">
+                            <h3>KHÁC</h3>
+                        </a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- Nội dung -->
+        <div class="main">
+            <div class="nd1">
+                <div class="container">
+                    <div class="tieude">
+                        <p ><a href="index.html" class="TrangChu" style="color: #0cc0df;">Trang Chủ</a> / Sản Phẩm
+                            <a href="index.html" class="TrangChu" style="color: #0cc0df;"></a> / Bút bi gel bấm Deli</p>
+                    </div>
+                    <div class="ChiTietSP">
+                        <div class="ChiTietSP1">
+                            <button class="pre_btn"><i class="fa-solid fa-chevron-left"></i></button>
+                            <div class="slide_list">
+                                
+                                <img class="img_chitietsp" src="./img/imgChiTietSP/but1.png"
+                                    alt="">
+                                <img class="img_chitietsp" src="./img/imgChiTietSP/but2.png"
+                                    alt="">
+                                <img class="img_chitietsp" src="./img/imgChiTietSP/but3.png"
+                                    alt="">
+                                <img class="img_chitietsp" src="./img/imgChiTietSP/but4.png"
+                                    alt="">
+                                
+                            </div>
+                            <button class="next_btn"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+    
+                        <div class="ChiTietSP2">
+                            <div class="tieude2">
+                                <h2>    Bút dạ quang bộ 6 màu highlight pastel đánh dấu nhớ dòng HP7251</h2>
+                                <p><span class="nd_tieude2">50000069CB20</span> 
+                                    <span class="nd_tieude2">
+                                        <i style="color: #F5CD4B;" class="fa-solid fa-star"></i> 4.9</span>
+                                        <span class="nd_tieude2">2.7k đánh giá</span>
+                                        <span class="nd_tieude2">800 bìnhluận</span>
+                                </p>
+                                <p style="font-size: 18px;">
+                                <h3>Giá: 29000đ</h3>
+                                </p>
+                                
+                            </div>
+                            <div class="MauSac">
+                                <span class="label">Màu Sắc</span>
+                                    <div class="Mausac">
+                                        <button class="MauSac1" style="background-color: blue;"></button>
+                                        <button class="MauSac1" style="background-color: red; "></button>
+                                        <button class="MauSac1" style="background-color: black; "></button>
+                                    </div>
+                            </div>
+                            <div class="ButBi">
+                                <div class="PhanLoai">
+                                    <span class="label">Phân Loại</span>
+                                    <div class="options">
+                                        <div class="ThayDoiTheoMau">
+                                            <div class="PhanLoaiBut">
+                                                <button class="option" data-image="./img/imgChiTietSP/Deli1.png">
+                                                    <div style="display: flex; align-items: center;">
+                                                        <img src="./img/imgChiTietSP/but1.png"/>
+                                                        <div class="text">HP7251A- 6 màu retro</div>
+                                                    </div>
+                                                </button>
+                                                <button class="option" data-image="./img/imgTrangChu/deli5.png">
+                                                    <div style="display: flex; align-items: center;">
+                                                        <img src="./img/imgChiTietSP/but2.png"/>
+                                                        <div class="text">HP7251A - 6 màu matro</div>
+                                                    </div>
+                                                </button>
+    
+                                            </div>
+                                            <div class="PhanLoaiBut">
+                                                <button class="option" data-image="./img/imgChiTietSP/Deli6.png">
+                                                    <div style="display: flex; align-items: center;">
+                                                        <img src="./img/imgChiTietSP/but3.png"/>
+                                                        <div class="text">HP7251A-6 màu macaron</div>
+                                                    </div>
+                                                </button>
+                                                <button class="option" data-image="./img/imgChiTietSP/deli7.png">
+                                                    <div style="display: flex; align-items: center;">
+                                                        <img src="./img/imgChiTietSP/but4.png"/>
+                                                        <div class="text">6 màu pastel</div>
+                                                    </div>
+                                                </button>
+    
+                                            </div>
+                                            
+    
+                                            
+                                        </div>
+                                    </div>
+                                    
+                            </div>
+                            <div class="mua">
+                                <button id="btnAddToCart"
+                                    style="width: 100%; height: 100%; display: block;background-color: #0cc0df ;color: white;border: #0cc0df; cursor: pointer;"
+                                    >
+                                    Thêm Vào Giỏ Hàng</button>
+                                <script src="./js/Giohang.js"></script>
+                                
+                            </div>
+                            
+    
+                        </div>
+                    </div>
+                    
+                </div>   
+                <div class="chiTietSanPham" style="background-color: white;">
+                    <h2 style="padding: 5px 10px;">Chi Tiết Sản Phẩm</h2>
+                    <div class="specifications">
+                        <h2>Thông tin sản phẩm</h2>
+                        <table>
+                            <tr>
+                                <td>Thương hiệu</td>
+                                <td>Deli</td>
+                            </tr>
+                            <tr>
+                                <td>Loại Bút</td>
+                                <td>Bút Dạ Quang</td>
+                            </tr>
+                            <tr>
+                                <td>Gửi Từ</td>
+                                <td>Hải Dương</td>
+                            </tr>
+                            <tr>
+                                <td>Kho</td>
+                                <td>4807</td>
+                            </tr>
+                        </table>
+                        <h2>Chi Tiết Sản Phẩm</h2>
+                        <table>
+                            <tr>
+                                <td>Tên sản phẩm</td>
+                                <td>Bút dạ quang bộ 6 màu highlight pastel đánh dấu nhớ dòng HP7251 </td>
+                            </tr>
+                            <tr>
+                                <td>Loại sản phẩm</td>
+                                <td>Bút dạ quang</td>
+                            </tr>
+                            <tr>
+                                <td>Chất liệu</td>
+                                <td>Nhựa.</td>
+                            </tr>
+                            <tr>
+                                <td>Nét bút</td>
+                                <td>0.9 mm</td>
+                            </tr>
+                            <tr>
+                                <td>Tên tổ chức sản xuất</td>
+                                <td>Đang cập nhật</td>
+                            </tr>
+                            
+                        </table>
+                       
+                    </div>
+
+                    <div class="thongtinsp">
+                        <h2 style="padding: 5px 10px">Mô Tả Sản Phẩm</h2>
+                        <div class="motasp">
+                            <p>Văn phòng phẩm NGỌC QUANG chuyên cung cấp những vật phẩm đơn giản phục vụ cho các hoạt động văn phòng như: giấy in, sổ, giấy note, bút bi, bút mực, 
+                                ghim giấy, kẹp giấy, giấy bóng kính, túi nhựa, cặp nhựa, băng dính, hồ dán, phong bì, túi bìa cứng, sổ cặp tài liệu...</p>
+                            <h2>Mô tả sản phẩm</h2>
+                            <div class="imgmtsp">
+                                <img src="./img/imgTrangChu/sanphambanchay2.png" alt="">
+                                
+                                <ul style="text-align: left; width: 100%;margin-top: 0px;">
+                                    <li>Bút dạ quang 6 màu highlight đáp ứng những yêu cầu khắt khe nhất của khách hàng.</li>
+                                    <li>Mang đến những chiếc bút với màu sắc đẹp, đảm bảo nguyên liệu cao cấp. </li>
+                                    <li>Ngòi bút highlight cứng cáp, ra mực đều luôn đảm bảo đúng kích thước, độ bền cao trong suốt thời gian sử dụng.</li>
+                                    <li>Nét bút dày mảnh tùy thuộc việc bạn lựa chọn vào màu của bút, giúp việc highlight marker dễ dàng. </li>
+                                    <li>Vỏ và nắp bút được sản xuất từ nhựa cao cấp, có thiết kế đơn giản, bắt mắt, phù hợp để trang trí trên bàn làm việc. 
+                                        Thân bút thon dài dễ cầm nắm và lưu trữ, bảo quản bút trong thời gian dài.</li>
+                                </ul>
+                                
+                               
+
+                                <p style="margin-bottom: 0px;"><b>Văn phòng phẩm Ngọc Quang cam kết:</b>
+                                </p>
+                                <ul style="text-align: left; width: 100%;margin-top: 0px;">
+                                    <li>Sản phẩm được kiểm tra kỹ, cẩn thận và tư vấn nhiệt tình.</li>
+                                    <li>Hàng có sẵn, giao hàng ngay khi nhận được đơn.</li>
+                                    <li>Hoàn tiền nếu sản phẩm không giống với mô tả.</li>
+                                    <li>Chấp nhận đổi hàng lỗi do nhà sản xuất, vận chuyển.</li>
+                                    <li>Giao hàng trên toàn quốc, nhận hàng trả tiền.</li>
+                                </ul>
+                                <p style="margin-bottom: 0px;"><b>QUY ĐỊNH BẢO HÀNH, ĐỔI TRẢ:</b>
+                                <ol style="text-align: left; width: 100%;margin-top: 0px;">
+                                    <li>Điều kiện áp dụng (trong vòng 07 ngày kể từ khi nhận sản phẩm).</li>
+                                    <ul>
+                                        <li>Hàng hoá vẫn còn mới, chưa qua sử dụng. </li>
+                                        <li>Hàng hoá bị lỗi hoặc hư hỏng do vận chuyển hoặc do nhà sản xuất.</li>
+                                        <li>Chỉ nhận lại hàng khi Qúy khách có video quay từ lúc mở hàng đến lúc kiểm tra hàng lỗi.</li>
+                                    </ul>
+                                    <li>Trường hợp không đủ điều kiện áp dụng chính sách: </li>
+                                    <ul>
+                                        <li>Quá 07 ngày kể từ khi Quý khách nhận hàng.</li>
+                                        <li>Gửi lại hàng không đúng mẫu mã, không phải sản phẩm của LENG KENG.</li>
+                                    </ul>
+                                </ol>
+                               
+                                <p>Quý khách lưu ý: Do màn hình và điều kiện ánh sáng khác nhau, màu sắc thực tế của sản phẩm có thể chênh lệch khoảng 3-5%.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>    
+            </div>
+        </div>
+
+        <!-- Tổng Kết -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-container">
+                    <div class="footer1">
+                        <h3 class="footer_heading">Ngọc Quang</h3>
+                        <ul  class="footer_list">
+                            <li><a href="">Địa chỉ: Hà Nội</a></li>
+                            <li><a href="">Hotline: 0356132833</a></li>
+                            <li><a href="">Email: minhquang17012005@gmail.com</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer1">
+                        <h3 class="footer_heading">Cửa hàng</h3>
+                        <ul class="footer_list">
+
+                            <li><a href="">Liên hệ</a> </li>
+                            <li><a href="">Thông tin về chúng tôi</a></li>
+                            <li><a href="">Giỏ hàng</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer1">
+                        <h3 class="footer_heading">Khuyến Mãi Ưu Đãi</h3>
+                        <ul class="footer_list">
+                            <li style="color: black;">
+                                <label for="fullname">Đăng ký nhận thông tin ở đây</label>
+                                <div style="display: flex;">
+                                    <input id="fullname" required placeholder="Nhập email" name="ho_ten" type="email" maxlength="50" style="padding: 8px; margin-top: 12px;">
+                                    <div style="align-items: center; display: flex; margin-top: 12px; border: 1px white solid; padding: 0 5px; cursor: pointer;">Đăng Ký</div>
+                                </div>
+                            </li>
+                            <li style="display: flex;">
+                                <div class="footer_item">
+                                    <a href="" style="color: black;"><i class="fa-brands fa-facebook"></i></a>
+                                </div>
+                                <div class="footer_item">
+                                    <a href="" style="color: black;"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                                <div class="footer_item">
+                                    <a href="" style="color: black;"><i class="fa-brands fa-linkedin"></i></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer1">
+                        <h3 class="footer_heading">Địa chỉ</h3>
+                        <ul class="footer_list">
+
+                            <li><iframe class="bando"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14897.074812396653!2d105.83546678715818!3d21.0219319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abecf96ebdf9%3A0xe4cdba9b19fd27e2!2zQ-G7rWEgaMOgbmcgVsSDbiBwaMOybmcgcGjhuqltIEjhu5NuZyBIw6A!5e0!3m2!1svi!2s!4v1744030159806!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <script src="./js/ChiTietSP.js"></script>
+        <script src="./js/jquery-3.7.1.min.js"></script>
+        <script src="./js/main.js"></script>
+    </div>
+</body>
+</html>

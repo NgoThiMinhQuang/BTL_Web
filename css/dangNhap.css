@@ -1,0 +1,81 @@
+.container_sign {
+    max-width: 1130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0px;
+}
+.logo_sign {
+    width: 45%;
+    height: 150px;
+    margin-bottom: 20px;
+}
+.logo_sign img {
+    margin-top: -50px;
+    width: 70%;
+    height:  auto;
+}
+
+.sign {
+    width: 35%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px #cccccc;
+    text-align: center;
+
+}
+
+.sign h2 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #0cc0df;
+}
+
+.sign input {
+    width: 80%;
+    height: 40px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 1px solid #0cc0df;
+    outline: none;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.sign input:focus {
+    border: 1px solid #0cc0df;
+}
+
+.sign button {
+    padding: 5px 15px;
+    height: 40px;
+    font-size: 14px;
+    border: none;
+    background-color: #0cc0df;
+    color: white;
+    border-radius: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.sign button:hover {
+    border: 1px solid #ccc;
+    color: black;
+    transform: scale(1.05);
+}
+
+.sign span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #707070;
+}
+
+.sign span a {
+    color: #0cc0df; 
+    font-weight: 600;
+    text-decoration: underline;
+}

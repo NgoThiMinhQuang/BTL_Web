@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAN PHONG PHAM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/TrangChu.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/SanPham.css">
+    <link rel="stylesheet" href="./css/ChiTietSP.css">
+    <link rel="stylesheet" href="./css/GioHang.css">
+    <link rel="stylesheet" href="./css/dangNhap.css">
+    <link rel="stylesheet" href="./css/dangKy.css">
+    <link rel="stylesheet" href="./css/ThanhToan.css">
+    <link rel="stylesheet" href="./css/Reponsive.css">
+
+     <!-- link font chữ -->
+     <link
+     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+     rel="stylesheet">
+</head>
+<body style="margin: 0; padding: 0;">
+    <div class="app" style="margin-bottom: 0; overflow: hidden;">
+        <header class="header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="header-top1">
+                        <ul>
+                            <li>
+                                <a class="hover" href="#"><i class="fa-solid fa-phone-flip"></i> Phone: 0356132833</a>
+                            </li>
+                        <hr>
+                            <li><a class="hover" href="#">
+                                <i class="fa-solid fa-envelope"></i> Email: minhquang17012005@gmail.com</a>
+                            </a></li>
+                        </ul>
+                    </div>
+
+                    <div class="header-top2">
+                        <ul>
+                            <li><a class="thongBao hover" href="#">
+                                <i class="fa-regular fa-bell"></i> Thông báo</a></li>
+                            <li><a class="hover" href="#"><i class="fa-regular fa-circle-question"></i> Hỗ trợ</a></li>
+                            <li class="Language"><a href="javascript:void(0)" class="language-select">Language
+                                <i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="Language-option">
+                                    <li data-value="Tiếng Việt">Tiếng Việt</li>
+                                    <li data-value="English">English</li>
+                                </ul>
+                            </li>
+
+                            <li id="auth-options1"><a class="hover" href="DangKy.html">Đăng Ký</a></li>
+                            <li id="auth-options2"><a class="hover" href="DangNhap.html">Đăng Nhập</a></li>
+                            <li id="logout-option">
+                            <a id="infor-acc" href="#">
+                                <i class="fa-solid fa-user"></i>
+                                <ul id="submenu_acc">
+                                    <li id="admin_panel">Quản lý cửa hàng</li>
+                                    <li id="dang_xuat" onclick="logout()">Đăng xuất</li>
+                                </ul>
+                            </a></li>     
+                         </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Header main -->
+             <div class="container1" style="background-color: #ffffff;">
+             <div class="container">
+               
+                 <div class="header-main">
+                     <div class="logo">
+                         <a href="index.html"><img src="./img/imgTrangChu/ngocquang3.png" alt="Logo">
+                           
+                        </a>
+                     </div>
+
+                     <div class="TimKiem">
+                        <div class="TimKiemInPut">
+                            <input type="text" class="input" placeholder="Tìm kiếm sản phẩm...">
+                            <!-- Xu hướng tìm kiếm -->
+                             <div class="history">
+                                <h3 class="heading">Tìm Kiếm Nhiều Nhất</h3>
+                                <ul class="list_history">
+                                    <li class="item"><a href="#"><i class="fa-solid fa-magnifying-glass"
+                                        style="font-size: 14px;"></i> Viết Máy & Mực </a></li>
+                                    <li class="item"><a href="#"><i class="fa-solid fa-magnifying-glass"
+                                            style="font-size: 14px;"></i> Dụng cụ học sinh & văn phòng</a></li>
+                                    <li class="item"><a href="#"><i class="fa-solid fa-magnifying-glass"
+                                            style="font-size: 14px;"></i> Sổ Tay </a></li>
+                                    <li class="item"><a href="#"><i class="fa-solid fa-magnifying-glass"
+                                                style="font-size: 14px;"></i> Bút Deli</a></li>
+                                    <li class="item"><a href="#"><i class="fa-solid fa-magnifying-glass"
+                                            style="font-size: 14px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;"></i> Giấy Note</a></li>
+                                </ul>
+                             </div>
+                        </div>
+                        <button class="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                     </div>
+
+                     <!-- Gio hàng -->
+                      <div class="GioHang">
+                        <a href="GioHang.html" class="fa-solid fa-cart-shopping" style="color: #0cc0df">
+                            
+                            <span class="notice">3</span>
+                            <span></span>
+                        </a>
+                      </div>
+                </div>  
+            </div> 
+            </div>            
+             
+
+
+             <div class="header-bottom" style="width: 100%; border-radius: 8px;">
+                <ul>
+                    <li><a href="index.html">
+                            <h3>TRANG CHỦ</h3>
+                        </a></li>
+                    <li><a href="#">
+                            <h3>GIỚI THIỆU</h3>
+                        </a></li>
+                    <li><a href="SanPham.html">
+                            <h3>CỬA HÀNG</h3>
+                        </a></li>
+                    <li><a href="SanPham.html">
+                            <h3>SẢN PHẨM</h3>
+                        </a></li>
+                    <li><a href="#">
+                            <h3>TIN TỨC</h3>
+                        </a></li>
+                    <li><a href="#">
+                            <h3>CHƯƠNG TRÌNH KHUYẾN MÃI</h3>
+                        </a></li>
+                    <li><a href="#">
+                            <h3>LIÊN HỆ</h3>
+                        </a></li>
+                    <li><a href="#">
+                            <h3>KHÁC</h3>
+                        </a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- Nội dung -->
+        <div class="main main_sign">
+            <div class="container container_sign">
+                <div class="logo_sign">
+                    <img src="./img/imgTrangChu/ngocquang3.png" alt="">
+                </div>
+                <div class="sign">
+                    <h2>Đăng nhập</h2>
+                    <div class="infor_account">
+                        <input autocomplete="off"type="text" id="tk" placeholder="Nhập tên tài khoản" required>
+                        <br>
+                        <input autocomplete="off"type="password" id="mk" placeholder="Nhập mật khẩu" required>
+                        <br>
+                        <button id="login_btn" onclick="login()">Đăng nhập</button>
+                        <br>
+                        <span>Bạn mới biết đến Ngọc Quang? <a href="DangKy.html">Đăng ký</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-container">
+                    <div class="footer1">
+                        <h3 class="footer_heading">Ngọc Quang</h3>
+                        <ul  class="footer_list">
+                            <li><a href="">Địa chỉ: Hà Nội</a></li>
+                            <li><a href="">Hotline: 0356132833</a></li>
+                            <li><a href="">Email: minhquang17012005@gmail.com</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer1">
+                        <h3 class="footer_heading">Cửa hàng</h3>
+                        <ul class="footer_list">
+
+                            <li><a href="">Liên hệ</a> </li>
+                            <li><a href="">Thông tin về chúng tôi</a></li>
+                            <li><a href="">Giỏ hàng</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer1">
+                        <h3 class="footer_heading">Khuyến Mãi Ưu Đãi</h3>
+                        <ul class="footer_list">
+                            <li style="color: black;">
+                                <label for="fullname">Đăng ký nhận thông tin ở đây</label>
+                                <div style="display: flex;">
+                                    <input id="fullname" required placeholder="Nhập email" name="ho_ten" type="email" maxlength="50" style="padding: 8px; margin-top: 12px;">
+                                    <div style="align-items: center; display: flex; margin-top: 12px; border: 1px white solid; padding: 0 5px; cursor: pointer;">Đăng Ký</div>
+                                </div>
+                            </li>
+                            <li style="display: flex;">
+                                <div class="footer_item">
+                                    <a href="" style="color: black;"><i class="fa-brands fa-facebook"></i></a>
+                                </div>
+                                <div class="footer_item">
+                                    <a href="" style="color: black;"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                                <div class="footer_item">
+                                    <a href="" style="color: black;"><i class="fa-brands fa-linkedin"></i></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer1">
+                        <h3 class="footer_heading">Địa chỉ</h3>
+                        <ul class="footer_list">
+
+                            <li><iframe class="bando"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14897.074812396653!2d105.83546678715818!3d21.0219319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abecf96ebdf9%3A0xe4cdba9b19fd27e2!2zQ-G7rWEgaMOgbmcgVsSDbiBwaMOybmcgcGjhuqltIEjhu5NuZyBIw6A!5e0!3m2!1svi!2s!4v1744030159806!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+
+    </div>
+
+    <script src="./jsindex.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/DangNhap.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

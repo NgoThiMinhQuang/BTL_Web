@@ -1,0 +1,309 @@
+.main{
+    background-color: #ffffff;
+    padding-bottom: 20px;
+   
+}
+.nd1 .tieude{
+    p{
+        margin: 0;
+        padding: 30px 0;
+        
+    }
+}
+.nd1 .TrangChu{
+    color: #0cc0df;
+}
+.ChiTietSP{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.nd1 .ChiTietSP .ChiTietSP1{
+    width: calc(50% - 15px);
+    height: 414px;
+    position: relative;
+    overflow: hidden;
+}
+.nd1 .ChiTietSP .ChiTietSP2 {
+    width: calc(50% - 15px);
+    height: 414px;
+}
+
+.nd1 .ChiTietSP1 .slide_list{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.nd1 .slide_list .img_chitietsp{
+    object-fit: cover;
+    height: 359px;
+    width: auto;
+    padding: 0 112px;
+    min-width: 100%;
+    /* padding-top: 40px; */
+}
+
+.next_btn, .pre_btn{
+    display: none;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #edededa5;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.ChiTietSP1:hover .pre_btn, .ChiTietSP1:hover .next_btn{
+    display: block;
+}
+.next_btn{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+}
+.pre_btn{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    z-index: 1;
+}
+
+.nd1 .ChiTietSP2 .nd_tieude2{
+    padding: 0 10px;
+    border-left: 1px #000 solid;
+    font-size: 14px;
+}
+.nd1 .ChiTietSP2 .nd_tieude2:nth-child(1){
+    padding-left: 0px;
+    border-left: none;
+    color: #6B7280;
+
+}
+.nd1 .ChiTietSP2 .nd_tieude2:nth-child(3){
+    color: #1250DC;
+    cursor: pointer;
+
+}
+.nd1 .ChiTietSP2 .nd_tieude2:nth-child(4){
+    color: #1250DC;
+    cursor: pointer;
+}
+.nd1 .MauSac{
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+.nd1 .MauSac .label{
+    font-size: 17px;
+    color: var(--text-color);
+    
+}
+.nd1 .MauSac .label .Mausac{
+    display: flex;
+    gap: 10px;
+}
+.MauSac1{
+    padding: 10px 10px;
+    border-radius: 30px;
+    background-color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 5px;
+    border: 2px solid #000;
+  
+}
+.MauSac1:hover{
+    border-color: red;
+}
+.nd1 .Mausac .MauSac1:focus{
+    border-color: red;
+    outline: none;
+}
+
+
+.option.selected {
+    border-color: red;
+}
+
+.option:hover {
+    border-color: red;
+}
+.option:hover{
+    border-color:red;
+
+}
+.nd1 .options .option:focus{
+    border-color: red;
+    outline: none;
+}
+
+/* Phân loại */
+.ButBi{
+    margin-top: 20px;
+}
+
+.nd1 .ButBi .label{
+    margin-right: 22px;
+    
+}
+.nd1 .PhanLoai{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.nd1 .ButBi .label .options{
+    display: flex;
+    gap: 10px;
+    
+}
+.nd1 .options .option{
+    padding: 9px 14px;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 5px;
+    border: 2px solid #000;
+
+}
+.nd1 .options .option:hover{
+    border-color:red;
+
+}
+.nd1 .options .option:focus{
+    border-color: red;
+    outline: none;
+}
+.nd1 .PhanLoaiBut:nth-child(1) {
+    margin-bottom: 10px;
+} 
+.nd1 .PhanLoaiBut:nth-child(2) {
+    margin-bottom: 10px;
+} 
+
+.nd1 .options:focus-within .option:focus {
+    border-color: red;
+}
+.nd1 .PhanLoaiBut .option{
+    padding: 2px 14px;
+    width: 153px;
+    margin-top: 0 50px;
+}
+
+.nd1 .PhanLoaiBut .option img{
+    width: 28px;
+    height: auto;
+}
+
+.nd1 .PhanLoaiBut .option .text{
+    margin-left: 2px;
+    height: 100%;
+}
+.ChiTietSP2 .tieude2 h2{
+    line-height: 40px;
+}
+.nd1 .ChiTietSP2 .mua {
+    width: 69%;
+    text-align: center;
+    border: 1px #0cc0df solid;
+    margin-top: 20px;
+    padding: 7px 0;
+    border-radius: 8px;
+    color:white;
+    background-color: #0cc0df;
+    cursor: pointer;
+}
+
+.nd1 .specifications {
+    line-height: 1.6;
+    color: #333;
+    margin: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+}
+
+.nd1 .specifications h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+}
+.nd1 .specifications table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.nd1 .specifications table td {
+    padding: 4px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
+}
+
+.nd1 .specifications table td:first-child {
+    font-weight: bold;
+    color: #6B7280; /* Màu chữ xám cho tiêu đề */
+    width: 40%;
+}
+
+.nd1 .specifications table td:last-child {
+    color: #000; /* Màu chữ đen cho nội dung */
+}
+.nd1 .chiTietSanPham{
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 16px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.thongtinsp .motasp h2{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+    margin-left: 40px;
+}
+.thongtinsp .motasp p
+ {
+    text-align: justify;
+    line-height: 30px;
+    margin: 0px 40px;
+}
+.imgmtsp ul,
+.imgmtsp li,
+.imgmtsp ol {
+    /*  */
+    line-height: 30px;
+    
+}
+
+.thongtinsp .motasp img{
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Canh giữa ảnh */
+}
+.imgmtsp ul{
+    list-style: none;
+    li{
+        margin-bottom: 8px;
+    }
+    
+}
+
+
+.imgmtsp li::before {
+    content: "-";          /* Thêm dấu gạch ngang */
+    margin-right: 8px;     /* Khoảng cách giữa dấu và nội dung */
+}

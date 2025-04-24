@@ -1,0 +1,469 @@
+
+.img_container{
+    width: 100%;
+    position: relative;
+    height: auto;
+    margin-top: 0px;
+    
+}
+
+.img_container img{
+    width: 100%;
+    height: 600px;
+    display: block;
+    margin: auto;
+    border-radius: 15px;
+    filter: saturate(1.2);
+}
+
+.img_container .img-jpg{
+    z-index: 2;
+    
+}
+
+.img_anh{
+    display: flex;
+    justify-content: space-between;
+    border: 0 solid white;
+    margin-top: 20px;
+    position: relative;
+
+}
+
+.img_anh img{
+    border-radius: 15px;
+    overflow: hidden;
+    width: 624px;
+    height: 211px;
+}
+.img_container .slide-buttonleft{
+    display: none;
+    position: absolute;
+    top:35%;
+    left: 270px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    padding: 15px;
+    background-color: #ffff;
+    border-radius: 50%;
+}
+.img_container:hover .slide-buttonleft{
+    display: block;
+    cursor: pointer;
+}
+
+.img_container .slide-buttonright{
+    position: absolute;
+    display: none;
+    top:35%;
+    right: 270px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    padding: 15px;
+    background-color: #ffff;
+    border-radius: 50%;
+}
+.img_container:hover .slide-buttonright{
+    display: block;
+    cursor: pointer;}
+
+.img_anh .slide-buttonleft{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    padding: 15px;
+    background-color: #ffff;
+    border-radius: 50%;
+}
+.img_anh:hover .slide-buttonleft{
+    display: block;
+    cursor: pointer;
+}
+
+.img_anh .slide-buttonright{
+    display: none;
+    position: absolute;
+    top:50%;
+    right: -20px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    padding: 15px;
+    background-color: #ffff;
+    border-radius: 50%;
+}
+.img_anh:hover .slide-buttonright{
+    display: block;
+    cursor: pointer;
+    
+}
+
+.nd2 .inner-wrap1{
+    display: flex;
+    margin: 20px 0;
+    justify-content: space-between;
+}
+
+.nd2 .inner-wrap1 .box{
+    width: 20%;
+    height: 250px;
+}
+
+.nd2 .inner-wrap1 .box .box1{
+    margin: 8px ;
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+    border-radius: 15px;
+    box-shadow: 0 1px 16px 0 rgba(0, 0, 0, 0.1);
+
+}
+.box1{
+    background-color: white;
+}
+
+.box1 .ButViet{
+    width: 100%;
+    height: 56px;
+    padding-top:19px ;
+    padding-left: 15px;
+    font-size: 20px;
+    color: #000;
+}
+
+.box1 .ButViet1{
+    display: flex;
+    justify-content: center;
+    width: 100%; height: 180px;
+    align-self: center;
+}
+.box:hover .ButViet1 img{
+    transform: scale(1.1);
+}
+
+.box .ButViet1 img{
+    transition: all 0.6s;
+    height: 160px;
+}
+
+.box1 .box1-1{
+    height: calc(50% - 10px);
+    width: 100%;
+    box-shadow: 0 1px 16px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 15px;
+}   
+.box1 .box1-1 .GiayInVanPhong{
+    font-size: 20px;
+    padding-top: 17px;
+    padding-left: 18px;
+    margin-right: 27px;
+    color: #000;
+}
+.box1 .box1-1 .img_GiayInVanPhong{
+    align-self: center;
+}
+
+.box1 .box1-1:hover .img_GiayInVanPhong img{
+    transform: scale(1.1);
+
+}
+.box .img_GiayInVanPhong img{
+    transition: all 0.6s;
+    width: 100px;
+}
+
+
+
+.nd3 .inner-wrap3{
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #0e59a0;
+}
+
+.nd3 .inner-wrap3 .img_GiamGia{
+    width: 100%;
+    img{
+        width: 100%;
+        height: 170px;
+    }
+}
+
+.nd3 .SanPham_GiamGia{
+    border-radius: 15px;
+    background-color: white;
+    margin: 0 8px 8px 8px;
+    border: 1px #000 solid;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nd3 .SanPham_GiamGia .SanPham_GiamGia1{
+    width: 24%; 
+}
+
+.SanPham_GiamGia1 .anh_SanPham{
+    width: 100%;
+    border: 1px #2C84D4 solid;
+    border-radius: 15px;
+    img{
+        width: 300px;
+        padding: 0 45px;
+        padding-top: 27px;
+        display: flex;
+        align-items: center;
+    }
+    
+}
+
+.SanPham_GiamGia1 .anh_SanPham .name_SanPham{
+    padding: 0 43px;
+    text-align: center;
+    color: #000;
+    font-size: 20px;
+    line-height: 25px;
+    overflow: hidden;
+}
+.anh_SanPham:hover  img{
+    transform: scale(1.1);
+}
+
+.anh_SanPham img{
+    transition: all 0.6s;
+    
+}
+
+.SanPham_GiamGia .ThongTinSP{
+    margin-top: 10px;
+}
+.SanPham_GiamGia .ThongTinSP .SoLuongBan{
+    background-color: #EF4444 ;
+    height: 22px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.nd3 .btn {
+    background-color: #d30000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 22px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.nd3 .gia_GiamGia{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nd4{
+    margin-top: 20px;
+}
+
+.nd4 .inner-wrap4{
+    border-radius: 15px;
+    box-shadow: 0 1px 16px 0 rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 10px;
+}
+.nd4 .inner-wrap4 .SanPhamMoiRa{
+    
+    display: flex;
+    justify-content: space-between;
+}
+.nd4 .SanPhamMoiRa .SanPhamMoiRa1{
+    width: calc(100% / 5 - 20px);
+    border-radius: 15px;
+    padding: 0;
+    
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s;
+}
+
+.SanPhamMoiRa1:hover{
+    box-shadow: 0 1px 16px 0 rgba(0, 0, 0, 0.1);
+}
+
+.nd4  .SanPhamMoiRa1 .img_spmr1{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+    margin: 0;
+    padding: 0;
+    
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.nd4 .ThongTin_spmr1 {
+    padding: 8px;
+}
+
+.nd4 .ThongTin_spmr1 .tt {
+    margin: 8px 0;
+}
+
+.nd4 .ThongTin_spmr1 .tt p a {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    line-height: 1.5em;
+    color: #000;
+    text-decoration: none;
+    margin: 0;
+}
+
+.nd4 .ThongTin_spmr1 .tt h3 {
+    margin: 5px 0;
+    font-size: 18px;
+}
+.DaBan {
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.nd4 .ThongTin_spmr1 .DaBan p .DaBan1{
+    width: 40%;
+    padding: 7px;
+    background-color: #E5E7EB;
+    color: #6F7280;
+    border-radius: 15px;
+    font-size: 15px;
+    text-align: center
+}
+
+.Xemthem {
+    display: flex;
+    justify-content: center;
+    /* margin-top: 20px; */
+}
+.Xemthem .Xemthem1{
+    border-radius: 30px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #0cc0df;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+.nd4 .SanPhamMoiRa1:hover .img1{
+    transform: scale(1.1);
+}
+.nd5 .SanPhamMoiRa1 .img1{
+    transition: all 0.6s;
+}
+
+
+.nd5 {
+    margin-top: 20px;
+}
+
+.nd5 .img_TongKet{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.nd5 .img_TongKet .img_TongKet1{
+    width: calc(100% / 3 - 30px / 2);
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: 150px;
+        border-radius: 15px;
+    }
+}
+
+
+.triankhachhang {
+    
+    
+}
+.triankhachhang h2 {
+    padding-top: 5px;
+}
+
+
+
+.nd6{
+    margin-top: 20px;
+}
+
+.nd6 .container .inner-wrap6{
+    
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    gap: 20px;
+    p{
+        text-align: center;
+    }
+}
+
+.nd6 .container .inner-wrap6 img{
+    width: 280px;
+    height: 50px;
+}
+
+
+.CamKetChatLuong {
+    display: flex; /* Sử dụng Flexbox */
+    flex-direction: column; /* Sắp xếp các phần tử theo cột */
+    align-items: center; /* Căn giữa theo chiều ngang */
+    justify-content: center; /* Căn giữa theo chiều dọc */
+    text-align: center; /* Căn giữa văn bản */
+    margin: 10px 0; /* Khoảng cách trên và dưới */
+}
+
+.CamKetChatLuong i {
+    font-size: 40px; /* Kích thước biểu tượng */
+    color: #0cc0df; /* Màu sắc biểu tượng */
+    margin-bottom: 10px; /* Khoảng cách giữa biểu tượng và tiêu đề */
+}
+.CamKetChatLuong h3 {
+    margin: 5px 0; /* Giảm khoảng cách trên và dưới của tiêu đề */
+    line-height: 1.2; /* Giảm chiều cao dòng của tiêu đề */
+}
+
+.CamKetChatLuong p {
+    margin: 5px 0; /* Giảm khoảng cách trên và dưới của đoạn văn */
+    line-height: 1.3; /* Giảm chiều cao dòng của đoạn văn */
+}
+
+.main3_2_listsp .img_sp1{
+    width: 100%;
+    height: 180px;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+    
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 15px 15px 0 0;
+        margin: 0;
+        padding: 0;
+    }
+}

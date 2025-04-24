@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAN PHONG PHAM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/TrangChu.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/SanPham.css">
+    <link rel="stylesheet" href="./css/ChiTietSP.css">
+    <link rel="stylesheet" href="./css/GioHang.css">
+    <link rel="stylesheet" href="./css/dangNhap.css">
+    <link rel="stylesheet" href="./css/dangKy.css">
+    <link rel="stylesheet" href="./css/ThanhToan.css">
+    <link rel="stylesheet" href="./css/Reponsive.css">
+
+     <!-- link font chữ -->
+     <link
+     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+     rel="stylesheet">
+</head>
+<body style="margin: 0; padding: 0;">
+    <div class="app" style="margin-bottom: 0; overflow: hidden;">
+        <header class="header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="header-top1">
+                        <ul>
+                            <li>
+                                <a class="hover" href="#"><i class="fa-solid fa-phone-flip"></i> Phone: 0356132833</a>
+                            </li>
+                        <hr>
+                            <li><a class="hover" href="#">
+                                <i class="fa-solid fa-envelope"></i> Email: minhquang17012005@gmail.com</a>
+                            </a></li>
+                        </ul>
+                    </div>
+
+                    <div class="header-top2">
+                        <ul>
+                            <li><a class="thongBao hover" href="#">
+                                <i class="fa-regular fa-bell"></i> Thông báo</a></li>
+                            <li><a class="hover" href="#"><i class="fa-regular fa-circle-question"></i> Hỗ trợ</a></li>
+                            <li class="Language"><a href="javascript:void(0)" class="language-select">Language
+                                <i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="Language-option">
+                                    <li data-value="Tiếng Việt">Tiếng Việt</li>
+                                    <li data-value="English">English</li>
+                                </ul>
+                            </li>
+
+                            <li id="auth-options1"><a class="hover" href="DangKy.html">Đăng Ký</a></li>
+                            <li id="auth-options2"><a class="hover" href="DangNhap.html">Đăng Nhập</a></li>
+                            <li id="logout-option">
+                            <a id="infor-acc" href="#">
+                                <i class="fa-solid fa-user"></i>
+                                <ul id="submenu_acc">
+                                    <li id="admin_panel">Quản lý cửa hàng</li>
+                                    <li id="dang_xuat" onclick="logout()">Đăng xuất</li>
+                                </ul>
+                            </a></li>     
+                         </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Header main -->
+             <div class="container1" style="background-color: #ffffff;">
+             <div class="container">
+               
+                 <div class="header-main">
+                     <div class="logo">
+                         <a href="index.html"><img src="./img/imgTrangChu/ngocquang3.png" alt="Logo">
+                           
+                        </a>
+                     </div>
+
+                     <div class="TimKiem">
+                        <div class="TimKiemInPut">
+                            <input type="text" class="input" placeholder="Tìm kiếm sản phẩm...">
+                            <!-- Xu hướng tìm kiếm -->
+                             <div class="history">
+                                <h3 class="heading">Tìm Kiếm Nhiều Nhất</h3>
+                                <ul class="list_history">
+                                    <li class="item"><a href="#"><i class="fa-solid fa-magnifying-glass"
+                                        style="font-size: 14px;"></i> Viết Máy & Mực </a></li>
+                                    <li class="item"><a href="#"><i class="fa-solid fa-magnifying-glass"
+                                            style="font-size: 14px;"></i> Dụng cụ học sinh & văn phòng</a></li>
+                                    <li class="item"><a href="#"><i class="fa-solid fa-magnifying-glass"
+                                            style="font-size: 14px;"></i> Sổ Tay </a></li>
+                                    <li class="item"><a href="#"><i class="fa-solid fa-magnifying-glass"
+                                                style="font-size: 14px;"></i> Bút Deli</a></li>
+                                    <li class="item"><a href="#"><i class="fa-solid fa-magnifying-glass"
+                                            style="font-size: 14px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;"></i> Giấy Note</a></li>
+                                </ul>
+                             </div>
+                        </div>
+                        <button class="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                     </div>
+
+                     <!-- Gio hàng -->
+                      <div class="GioHang">
+                        <a href="GioHang.html" class="fa-solid fa-cart-shopping" style="color: #0cc0df">
+                            
+                            <span class="notice">3</span>
+                            <span></span>
+                        </a>
+                      </div>
+                </div>  
+            </div> 
+            </div>            
+             
+
+
+             <div class="header-bottom" style="width: 100%; border-radius: 8px;">
+                <ul>
+                    <li><a href="index.html">
+                            <h3>TRANG CHỦ</h3>
+                        </a></li>
+                    <li><a href="#">
+                            <h3>GIỚI THIỆU</h3>
+                        </a></li>
+                    <li><a href="SanPham.html">
+                            <h3>CỬA HÀNG</h3>
+                        </a></li>
+                    <li><a href="SanPham.html">
+                            <h3>SẢN PHẨM</h3>
+                        </a></li>
+                    <li><a href="#">
+                            <h3>TIN TỨC</h3>
+                        </a></li>
+                    <li><a href="#">
+                            <h3>CHƯƠNG TRÌNH KHUYẾN MÃI</h3>
+                        </a></li>
+                    <li><a href="#">
+                            <h3>LIÊN HỆ</h3>
+                        </a></li>
+                    <li><a href="#">
+                            <h3>KHÁC</h3>
+                        </a></li>
+                </ul>
+            </div>
+        </header>
+
+
+        <!-- Nội dung -->
+        <div class="main">
+            <div class="main1">
+                <div class="container">
+                    <div class="tieude">
+                        <p><a href="index.html" class="TrangChu">Trang Chủ</a>/Sản Phẩm</p>
+                        <h1>Sản Phẩm</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main2">
+                <div class="container">
+                    <div class="ChiTietSP1">
+                        <button class="pre_btn"><i class="fa-solid fa-chevron-left"></i></button>
+                        <div class="slide_list">
+                            <img class="img_ChiTietSP" src="./img/imgSanPham/SanPham1.jpg" alt=""/>
+                            <img class="img_ChiTietSP" src="./img/imgSanPham/SanPham2.jpg" alt=""/>
+                            <img class="img_ChiTietSP" src="./img/imgSanPham/SanPham3.jpg" alt=""/>
+                            <img class="img_ChiTietSP" src="./img/imgSanPham/SanPham4.jpg" alt=""/>
+                            <img class="img_ChiTietSP" src="./img/imgSanPham/SanPham5.jpg" alt=""/>
+                        </div>
+                        <button class="next_btn"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="main3">
+                <div class="container">
+                    <div class="inner-wrap-main3">
+                        <div class="main3_1">
+                            <div class="BoLoc">
+                                <i class="fa-solid fa-filter" style="color: #0cc0df;"></i>
+                                <h3>Bộ Lọc Tìm Kiếm</h3>
+                            </div>
+                            <div class="filter-section">
+                                <h3>Loại Sản Phẩm</h3>
+                                <ul>
+                                    <li><input type="checkbox" name="loaiBut" id="ButBi" checked><label for="ButBi">Bút Bi</label></li>
+                                    <li><input type="checkbox" name="loaiBut" id="ButLuyenChu"><label for="ButLuyenChu">Bút Luyện Chữ</label></li>
+                                    <li><input type="checkbox" name="loaiBut" id="ButGel"><label for="ButGel">Bút gel</label></li>
+                                    <li><input type="checkbox" name="loaiBut" id="ButXoa"><label for="ButXoa">Bút Xóa</label></li>
+                                    <li><input type="checkbox" name="loaiBut" id="ButChi"><label for="ButChi">Bút Chì</label></li>
+                                    <li><input type="checkbox" name="loaiBut" id="ButDaQuang"><label for="ButDaQuang">Bút Dạ Quang</label></li>
+                                    <li><input type="checkbox" name="loaiBut" id="PhuKienButBi"><label for="PhuKienButBi">Phụ Kiện Bút Viết</label></li>
+                                </ul>
+                            </div>
+
+                            <div class="filter-section">
+                                <h3>Mức Giá</h3>
+                                <ul><li><input type="radio" name="mucgia" id="PhuKienButBi" checked><label for="PhuKienButBi">Tất Cả</label></li>
+                                    <li><input type="radio" name="mucgia" id="ButBi"><label for="ButBi">Giá dưới 100.000đ</label></li>
+                                    <li><input type="radio" name="mucgia" id="ButLuyenChu"><label for="ButLuyenChu">100.000đ - 300.000đ</label></li>
+                                    <li><input type="radio" name="mucgia" id="ButGel"><label for="ButGel">300.000đ - 500.000đ</label></li>
+                                    <li><input type="radio" name="mucgia" id="ButXoa"><label for="ButXoa">500.000đ - 700.000đ</label></li>
+                                    <li><input type="radio" name="mucgia" id="ButChi"><label for="ButChi">700.000đ - 1.000.000đ</label></li>                                        
+                                    <li><input type="radio" name="mucgia" id="ButDaQuang"><label for="ButDaQuang">Giá trên 1.000.000đ</label></li>
+                        
+                                </ul>
+                                <div class="price-range">
+                                    <label>Hoặc nhập khoảng giá phù hợp với bạn:</label>
+                                    <p></p>
+                                    <input type="number" placeholder="100.000đ" id="price-from" min="100000"
+                                        max="4799000"> ~
+                                    <input type="number" placeholder="1.000.000đ" id="price-to" min="400000"
+                                        max="4799000">
+                                    <div id="error-message" class="error-message">Vui lòng nhập giá trị từ 100.000đ đến 1.000.000đ trở lên</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main3_2">
+                            <div class="LocNhanh">
+                                <span style="padding: 10px; color: #939497;">Lọc nhanh:</span>
+                                <div class="ThuongHieu" tabindex="0">Thương Hiệu <i style="margin-left: 8px;" class="fa-solid fa-angle-down"></i></div>
+                                <div class="list_ThuongHieu">
+                                    <div style="padding: 10px">
+                                        <div class="ThuongHieu_item">
+                                            <div class="ThuongHieu_item1">DeLi</div>
+                                            <div class="ThuongHieu_item1">Thiên Long</div>
+                                            <div class="ThuongHieu_item1">Hồng Hà</div>
+                                        </div>
+                                        <div class="ThuongHieu_item">
+                                            <div class="ThuongHieu_item1">Flexoffice</div>
+                                            <div class="ThuongHieu_item1">Montblanc</div>
+                                            <div class="ThuongHieu_item1">Pentel</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="Sxtheo">
+                                <div>Tìm thấy <b>115</b> kết quả</div>
+                                <div style="display: flex; position: relative;">
+                                    <span style="padding: 10px; color: #939497;">Sắp xếp theo:</span>
+                                    <div class="NoiBat" tabindex="0">Tên A -> Z<i style="margin-left: 65px;" class="fa-solid fa-angle-down"></i></div>
+                                    <div class="list_sx">
+                                        <ul>
+                                            <li class="list_sx_item">Tên A -> Z</li>
+                                            <li class="list_sx_item">Tên Z -> A</li>
+                                            <li class="list_sx_item">Giá Tăng Dần</li>
+                                            <li class="list_sx_item">Giá Giảm Dần</li>
+                                            <li class="list_sx_item">Hàng Mới Về</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="main3_2_listsp" style="margin-bottom: 10px;">
+                                <div class="main3_2_sp">
+                                    <div class="sp1">
+                                        <div class="img_sp1">
+                                            <div class="img1" >
+                                                <a href="ChiTietSP.html">
+                                                    <img src="./img/imgTrangChu/deli.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="ThongTin_spmr1">
+                                            <div class="DaBan">
+                                                <p><span class="DanhGia"><i style="color: #F5CD48;" class="fa-solid fa-star"></i> 4.9</span>
+                                                    <span class="DaBan1"> Đã bán 1944</span></p>
+                                                </div>
+                                            
+                                            <div class="tt">
+                                                <p>
+                                                  <h3>1.000đ - 4.500đ</h3>
+                                                </p>
+                                                <div style="color: #666;">
+                                                    <span
+                                                      style="text-decoration: line-through;padding-right: 5px;">2.000đ - 7.000đ
+                                                    </span> 
+                                                      <span style=" background-color: #FEEEEA; padding: 5px; color: #EE4D2D; border-radius: 8px; margin-left: 8px;">-50%</span>
+                                                </div>
+                                                <p><a href="ChiTietSP.html" style="color: #000;">Bút bi nước mực gel Xingmai ngòi 0.5mm khô nhanh viết trơn</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="main3_2_sp">
+                                    <div class="sp1">
+                                        <div class="img_sp1">
+                                            <div class="img1" >
+                                                <a href="ChiTietSP.html">
+                                                    <img src="./img/imgTrangChu/anh1.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="ThongTin_spmr1">
+                                            <div class="DaBan">
+                                                <p><span class="DanhGia"><i style="color: #F5CD48;" class="fa-solid fa-star"></i> 4.9</span>
+                                                    <span class="DaBan1"> Đã bán 6.6k</span></p>
+                                                </div>
+                                            
+                                            <div class="tt">
+                                                <p>
+                                                  <h3>65.000đ</h3>
+                                                </p>
+                                                <div style="color: #666;">
+                                                    <span
+                                                      style="text-decoration: line-through;padding-right: 5px;">85.000đ
+                                                    </span> 
+                                                      <span style=" background-color: #FEEEEA; padding: 5px; color: #EE4D2D; border-radius: 8px; margin-left: 8px;">-20%</span>
+                                                </div>
+                                                <p><a href="ChiTietSP.html" style="color: #000;">Set 4 bút gel MURA M-8172 Little Daisy hoa xanh LENG KENG mực đen chính hãng- ngòi 0.5mm</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main3_2_sp">
+                                    <div class="sp1">
+                                        <div class="img_sp1">
+                                            <div class="img1" >
+                                                <a href="">
+                                                    <img src="./img/imgTrangChu/anh2.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="ThongTin_spmr1">
+                                            <div class="DaBan">
+                                                <p><span class="DanhGia"><i style="color: #F5CD48;" class="fa-solid fa-star"></i> 4.9</span>
+                                                    <span class="DaBan1"> Đã bán 7k</span></p>
+                                                </div>
+                                            
+                                            <div class="tt">
+                                                <p>
+                                                  <h3>4.500đ</h3>
+                                                </p>
+                                                <div style="color: #666;">
+                                                    <span
+                                                      style="text-decoration: line-through;padding-right: 5px;">7.000đ
+                                                    </span> 
+                                                      <span style=" background-color: #FEEEEA; padding: 5px; color: #EE4D2D; border-radius: 8px; margin-left: 8px;">-50%</span>
+                                                </div>
+                                                <p><a href="" style="color: #000;">Set 4 bút gel MURA Rose Đỏ LENG KENG mực đen chính hãng- ngòi 0.5mm M-8930</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main3_2_sp">
+                                    <div class="sp1">
+                                        <div class="img_sp1">
+                                            <div class="img1" >
+                                                <a href="">
+                                                    <img src="./img/imgTrangChu/anh3.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="ThongTin_spmr1">
+                                            <div class="DaBan">
+                                                <p><span class="DanhGia"><i style="color: #F5CD48;" class="fa-solid fa-star"></i> 4.9</span>
+                                                    <span class="DaBan1"> Đã bán 72.9k</span></p>
+                                                </div>
+                                            
+                                            <div class="tt">
+                                                <p>
+                                                  <h3>1.000đ - 4.500đ</h3>
+                                                </p>
+                                                <div style="color: #666;">
+                                                    <span
+                                                      style="text-decoration: line-through;padding-right: 5px;">2.000đ - 7.000đ
+                                                    </span> 
+                                                      <span style=" background-color: #FEEEEA; padding: 5px; color: #EE4D2D; border-radius: 8px; margin-left: 8px;">-50%</span>
+                                                </div>
+                                                <p><a href="" style="color: #000;">Bút gel Mura Rose Love, Bút viết bi nước bấm mực đen ngòi 0.5mm vỏ họa tiết hoa hồng quý phái</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                         
+                            </div>
+
+                            <!-- Hàng 2 -->
+                            <div class="main3_2_listsp" style="margin-bottom: 10px;">
+                                <div class="main3_2_sp">
+                                    <div class="sp1">
+                                        <div class="img_sp1">
+                                            <div class="img1" >
+                                                <a href="">
+                                                    <img src="./img/imgTrangChu/anh4.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="ThongTin_spmr1">
+                                            <div class="DaBan">
+                                                <p><span class="DanhGia"><i style="color: #F5CD48;" class="fa-solid fa-star"></i> 4.9</span>
+                                                    <span class="DaBan1"> Đã bán 1k</span></p>
+                                                </div>
+                                            
+                                            <div class="tt">
+                                                <p>
+                                                  <h3>1.500.000đ</h3>
+                                                </p>
+                                                <div style="color: #666;">
+                                                    <span
+                                                      style="text-decoration: line-through;padding-right: 5px;">2.100.000đ
+                                                    </span> 
+                                                      <span style=" background-color: #FEEEEA; padding: 5px; color: #EE4D2D; border-radius: 8px; margin-left: 8px;">-40%</span>
+                                                </div>
+                                                <p><a href="ChiTietSP.html" style="color: #000;">Bút máy cao cấp Parker Sonnet Matte Black GT TB-1950875</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="main3_2_sp">
+                                    <div class="sp1">
+                                        <div class="img_sp1">
+                                            <div class="img1" >
+                                                <a href="ChiTietSP.html">
+                                                    <img src="./img/imgTrangChu/anh5.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="ThongTin_spmr1">
+                                            <div class="DaBan">
+                                                <p><span class="DanhGia"><i style="color: #F5CD48;" class="fa-solid fa-star"></i> 4.9</span>
+                                                    <span class="DaBan1"> Đã bán 7.9k</span></p>
+                                                </div>
+                                            
+                                            <div class="tt">
+                                                <p>
+                                                  <h3>26.000đ</h3>
+                                                </p>
+                                                <div style="color: #666;">
+                                                    <span
+                                                      style="text-decoration: line-through;padding-right: 5px;">29.000đ
+                                                    </span> 
+                                                      <span style=" background-color: #FEEEEA; padding: 5px; color: #EE4D2D; border-radius: 8px; margin-left: 8px;">-10%</span>
+                                                </div>
+                                                <p><a href="ChiTietSP.html" style="color: #000;">Bút bi đế cắm Thiên Long ECO Style PH-063/ECO - Mực Xanh - Chất liệu từ vỏ cám trấu</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main3_2_sp">
+                                    <div class="sp1">
+                                        <div class="img_sp1">
+                                            <div class="img1" >
+                                                <a href="">
+                                                    <img src="./img/imgTrangChu/anh6.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="ThongTin_spmr1">
+                                            <div class="DaBan">
+                                                <p><span class="DanhGia"><i style="color: #F5CD48;" class="fa-solid fa-star"></i> 4.9</span>
+                                                    <span class="DaBan1"> Đã bán 9k</span></p>
+                                                </div>
+                                            
+                                            <div class="tt">
+                                                <p>
+                                                  <h3>13.500đ</h3>
+                                                </p>
+                                                <div style="color: #666;">
+                                                    <span
+                                                      style="text-decoration: line-through;padding-right: 5px;">15.000đ
+                                                    </span> 
+                                                      <span style=" background-color: #FEEEEA; padding: 5px; color: #EE4D2D; border-radius: 8px; margin-left: 8px;">-10%</span>
+                                                </div>
+                                                <p><a href="" style="color: #000;">Combo 5/10 Ruột bút bi Thiên Long BPR-015 - Dùng cho bút bi Thiên Long TL-079</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main3_2_sp">
+                                    <div class="sp1">
+                                        <div class="img_sp1">
+                                            <div class="img1" >
+                                                <a href="">
+                                                    <img src="./img/imgTrangChu/anh7.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="ThongTin_spmr1">
+                                            <div class="DaBan">
+                                                <p><span class="DanhGia"><i style="color: #F5CD48;" class="fa-solid fa-star"></i> 4.9</span>
+                                                    <span class="DaBan1"> Đã bán 2k</span></p>
+                                                </div>
+                                            
+                                            <div class="tt">
+                                                <p>
+                                                  <h3>208.500đ</h3>
+                                                </p>
+                                                <div style="color: #666;">
+                                                    <span
+                                                      style="text-decoration: line-through;padding-right: 5px;">260.000đ
+                                                    </span> 
+                                                      <span style=" background-color: #FEEEEA; padding: 5px; color: #EE4D2D; border-radius: 8px; margin-left: 8px;">-20%</span>
+                                                </div>
+                                                <p><a href="" style="color: #000;">Combo 20 Bút Bi Thiên Long TL-031</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                         
+                            </div>
+
+                        
+                            
+
+                            <div class="pagination">
+                                <a href="#" class="disabled">&lt;</a>
+                                <span><a href="#" style="background-color: #0cc0df; color: #fff; border-color: #0cc0df;">1</a></span>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                                <span class="dots">...</span>
+                                <a href="#">14</a>
+                                <a href="#">&gt;</a>
+                            </div>
+
+
+                    </div>
+                </div>
+            </div>
+       </div>
+    </div>
+                
+
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-container">
+                    <div class="footer1">
+                        <h3 class="footer_heading">Ngọc Quang</h3>
+                        <ul  class="footer_list">
+                            <li><a href="">Địa chỉ: Hà Nội</a></li>
+                            <li><a href="">Hotline: 0356132833</a></li>
+                            <li><a href="">Email: minhquang17012005@gmail.com</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer1">
+                        <h3 class="footer_heading">Cửa hàng</h3>
+                        <ul class="footer_list">
+
+                            <li><a href="">Liên hệ</a> </li>
+                            <li><a href="">Thông tin về chúng tôi</a></li>
+                            <li><a href="">Giỏ hàng</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer1">
+                        <h3 class="footer_heading">Khuyến Mãi Ưu Đãi</h3>
+                        <ul class="footer_list">
+                            <li style="color: black;">
+                                <label for="fullname">Đăng ký nhận thông tin ở đây</label>
+                                <div style="display: flex;">
+                                    <input id="fullname" required placeholder="Nhập email" name="ho_ten" type="email" maxlength="50" style="padding: 8px; margin-top: 12px;">
+                                    <div style="align-items: center; display: flex; margin-top: 12px; border: 1px black solid; padding: 0 5px; cursor: pointer;">Đăng Ký</div>
+                                </div>
+                            </li>
+                            <li style="display: flex;">
+                                <div class="footer_item">
+                                    <a href="" style="color: black;"><i class="fa-brands fa-facebook"></i></a>
+                                </div>
+                                <div class="footer_item">
+                                    <a href="" style="color: black;"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                                <div class="footer_item">
+                                    <a href="" style="color: black;"><i class="fa-brands fa-linkedin"></i></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer1">
+                        <h3 class="footer_heading">Địa chỉ</h3>
+                        <ul class="footer_list">
+
+                            <li><iframe class="bando"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14897.074812396653!2d105.83546678715818!3d21.0219319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abecf96ebdf9%3A0xe4cdba9b19fd27e2!2zQ-G7rWEgaMOgbmcgVsSDbiBwaMOybmcgcGjhuqltIEjhu5NuZyBIw6A!5e0!3m2!1svi!2s!4v1744030159806!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <script src="./js/jquery-3.7.1.min.js"></script>
+        <script src="./js/sanpham.js"></script>
+        
+    </div>
+</body>
+</html>
